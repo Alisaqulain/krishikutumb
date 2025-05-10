@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishi Kutumb - Agricultural Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <nav class="fixed top-0 left-0 right-0 bg-white mx-auto px-4 py-4 flex items-center justify-between z-50">
+            <h1 class="text-2xl font-semibold text-black">Krishi Kutumb</h1>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-6 text-gray-700 font-medium relative">
+                <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+
+                <!-- Services Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition">Services</a>
+                    <ul
+                        class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Consulting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Soil Testing</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Equipment Rental</a></li>
+                    </ul>
+                </li>
+
+                <!-- Resources Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition">Resources</a>
+                    <ul
+                        class="absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Guides & PDFs</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+            </ul>
+            <button class="hidden md:block bg-green-700 text-white px-4 py-1 rounded-xl hover:bg-green-800 transition">
+                Get Started
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40">
+            <ul class="px-4 py-2 space-y-2">
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Home</a></li>
+                
+                <!-- Mobile Dropdown - Services -->
+                <li>
+                    <button class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded" id="services-dropdown-button">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul id="services-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Consulting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Soil Testing</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Equipment Rental</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Mobile Dropdown - Resources -->
+                <li>
+                    <button class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded" id="resources-dropdown-button">
+                        Resources <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul id="resources-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Video Tutorials</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Guides & PDFs</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">About</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Contact</a></li>
+                <li>
+                    <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition">
+                        Get Started
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main class="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 pt-32 pb-16 md:py-16 bg-cover bg-center"
+        style="background-image: url('images/bg.png'); min-height: 100vh;">
+        <!-- Left Content -->
+        <div class="left text-center md:text-left max-w-xl space-y-6">
+            <button
+                class="bg-white text-black px-5 py-1 rounded-xl shadow hover:bg-green-700 hover:text-white transition">
+                Trusted by Thousands!
+            </button>
+
+            <h1 class="text-4xl md:text-5xl font-semibold leading-tight"
+                style="font-family: 'Times New Roman', Times, serif;">
+                Rooted in Tradition.
+            </h1>
+            <h1 class="text-4xl md:text-5xl font-semibold leading-tight"
+                style="font-family: 'Times New Roman', Times, serif;">
+                Powered by <span class="text-green-600">Innovation</span>
+            </h1>
+
+            <p class="text-gray-700">Discover tools, tips, and technology that help you increase yield, reduce waste,
+                and make better decisions every farming season.</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+                <button class="bg-green-700 text-white px-6 py-2 rounded-xl hover:bg-green-800 transition">
+                    Get Started
+                </button>
+                <button
+                    class="bg-white text-black px-6 py-2 rounded-xl border hover:bg-green-700 hover:text-white transition">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="right mt-10 md:mt-0">
+            <img class="w-48 md:w-56 lg:w-64" src="images/girl.png" alt="Hero Image">
+        </div>
+
+        <!-- Down Arrow -->
+        <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2">
+            <span class="animate-bounce text-3xl text-white">&#8595;</span>
+        </div>
+    </main>
+
+    <!-- Services Section -->
+    <section class="text-center py-16 px-4 bg-gray-50">
+        <h5 class="text-green-700 font-semibold mb-2 uppercase tracking-wide">Services</h5>
+        <h1 class="text-3xl md:text-4xl font-semibold pb-10" style="font-family: 'Times New Roman', Times, serif;">
+            Elevating Excellence Beyond Expectations
+        </h1>
+
+        <!-- Cards Grid -->
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-10">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-2xl transition duration-300 text-left">
+                <img src="images/tracktor.webp" alt="Modern Agricultural Equipment"
+                    class="w-full h-48 object-cover rounded-md mb-4">
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Modern Agricultural Equipment</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                    Definire officia ambitiosa quae turmam provocant and metas maiores patendas et continuam
+                    emendationem persequendam
+                </p>
+                <button class="inline-flex items-center text-green-700 font-semibold hover:underline">
+                    Read More <span class="ml-2">&#8594;</span>
+                </button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-2xl transition duration-300 text-left">
+                <img src="images/men1.jpg" alt="Exceptional Harvest Quality"
+                    class="w-full h-48 object-cover rounded-md mb-4">
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Exceptional Harvest Quality</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                    Definire officia ambitiosa quae turmam provocant and metas maiores patendas et continuam
+                    emendationem persequendam
+                </p>
+                <button class="inline-flex items-center text-green-700 font-semibold hover:underline">
+                    Read More <span class="ml-2">&#8594;</span>
+                </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-2xl transition duration-300 text-left">
+                <img src="images/men2.jpg" alt="Organic Farming Products"
+                    class="w-full h-48 object-cover rounded-md mb-4">
+                <h2 class="text-lg font-semibold text-gray-800 mb-2">Organic Farming Products</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                    Definire officia ambitiosa quae turmam provocant and metas maiores patendas et continuam
+                    emendationem persequendam
+                </p>
+                <button class="inline-flex items-center text-green-700 font-semibold hover:underline">
+                    Read More <span class="ml-2">&#8594;</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div>
+            <button
+                class="bg-green-700 text-white px-8 py-2 rounded-full text-sm font-semibold hover:bg-green-800 transition">
+                View More
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="text-center py-16 px-4 bg-gray-50">
+        <h5 class="text-green-700 font-semibold mb-2 uppercase tracking-wide">Features</h5>
+        <h1 class="text-3xl md:text-4xl font-semibold pb-10" style="font-family: 'Times New Roman', Times, serif;">
+            Elevate Your Ambitions with Purpose
+        </h1>
+
+        <div class="flex flex-col lg:flex-row items-center">
+            <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                <img src="images/men3.png" alt="Features" class="w-full max-w-md mx-auto">
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 lg:p-6 bg-gray-100">
+                    <!-- Card 1 -->
+                    <div
+                        class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                        <i class="fa-solid fa-tractor text-4xl text-green-600"></i>
+                        <div>
+                            <h1 class="text-xl font-semibold">For Farmers</h1>
+                            <p class="text-gray-600">Connect, share experiences, and learn sustainable practices from
+                                fellow farming experts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                        <i class="fa-solid fa-user-nurse text-4xl text-blue-600"></i>
+                        <div>
+                            <h1 class="text-xl font-semibold">For Farmers</h1>
+                            <p class="text-gray-600">Connect, share experiences, and learn sustainable practices from
+                                fellow farming experts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                        <i class="fa-solid fa-wrench text-4xl text-yellow-600"></i>
+                        <div>
+                            <h1 class="text-xl font-semibold">For Farmers</h1>
+                            <p class="text-gray-600">Connect, share experiences, and learn sustainable practices from
+                                fellow farming experts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                        <i class="fa-solid fa-lightbulb text-4xl text-purple-600"></i>
+                        <div>
+                            <h1 class="text-xl font-semibold">For Farmers</h1>
+                            <p class="text-gray-600">Connect, share experiences, and learn sustainable practices from
+                                fellow farming experts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="text-center py-16 px-4 bg-gray-50 flex flex-col justify-center items-center">
+        <h5 class="text-green-700 font-semibold mb-2 uppercase tracking-wide">FAQs Section</h5>
+        <h1 class="text-3xl md:text-4xl font-semibold pb-10" style="font-family: 'Times New Roman', Times, serif;">
+            Frequently Asked Questions
+        </h1>
+
+        <div class="w-full md:w-3/4 lg:w-1/2 border-2 border-gray-200 rounded-xl p-4">
+
+
+            <!-- FAQ 1 -->
+            <div class="bg-white p-5 rounded-xl shadow-md mb-4">
+                <button
+                    class="w-full text-left flex justify-between items-center text-lg md:text-xl font-medium text-gray-800 faq-toggle">
+                    <span>What is the purpose of this platform?</span>
+                    <i class="fa-solid fa-chevron-down text-gray-500 faq-icon"></i>
+                </button>
+                <div class="mt-4 text-gray-600 hidden faq-content">
+                    <p>This platform connects farmers, allowing them to share experiences, learn sustainable practices,
+                        and collaborate with fellow experts.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="bg-white p-5 rounded-xl shadow-md mb-4">
+                <button
+                    class="w-full text-left flex justify-between items-center text-lg md:text-xl font-medium text-gray-800 faq-toggle">
+                    <span>How can I register as a farmer?</span>
+                    <i class="fa-solid fa-chevron-down text-gray-500 faq-icon"></i>
+                </button>
+                <div class="mt-4 text-gray-600 hidden faq-content">
+                    <p>You can easily register by clicking on the "Sign Up" button on the homepage and filling out the
+                        required details.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="bg-white p-5 rounded-xl shadow-md mb-4">
+                <button
+                    class="w-full text-left flex justify-between items-center text-lg md:text-xl font-medium text-gray-800 faq-toggle">
+                    <span>Are there any fees to join?</span>
+                    <i class="fa-solid fa-chevron-down text-gray-500 faq-icon"></i>
+                </button>
+                <div class="mt-4 text-gray-600 hidden faq-content">
+                    <p>No, joining the platform and using its basic features is completely free. Premium features may
+                        incur a fee.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="bg-white p-5 rounded-xl shadow-md mb-4">
+                <button
+                    class="w-full text-left flex justify-between items-center text-lg md:text-xl font-medium text-gray-800 faq-toggle">
+                    <span>Can I interact with other farmers?</span>
+                    <i class="fa-solid fa-chevron-down text-gray-500 faq-icon"></i>
+                </button>
+                <div class="mt-4 text-gray-600 hidden faq-content">
+                    <p>Yes, the platform encourages interaction through forums, messaging, and group discussions where
+                        farmers can exchange tips and advice.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="bg-white p-5 rounded-xl shadow-md">
+                <button
+                    class="w-full text-left flex justify-between items-center text-lg md:text-xl font-medium text-gray-800 faq-toggle">
+                    <span>How can I update my profile?</span>
+                    <i class="fa-solid fa-chevron-down text-gray-500 faq-icon"></i>
+                </button>
+                <div class="mt-4 text-gray-600 hidden faq-content">
+                    <p>You can update your profile by visiting the settings section in your account, where you can edit
+                        personal information and preferences.</p>
+                </div>
+            </div>
+        </div>
+        <!-- View More Button -->
+        <div class="py-10">
+            <button
+                class="bg-green-700 text-white px-8 py-2 rounded-full text-sm font-semibold hover:bg-green-800 transition">
+                View More
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Subscribe Section -->
+    <section style="background-color: #eef9d4;" class="py-12 mx-4 sm:mx-10 rounded-xl my-10">
+        <div class="max-w-4xl mx-auto text-center space-y-4 px-4">
+            <h5 class="text-sm text-gray-600 font-semibold">NEVER MISS AN UPDATE!</h5>
+            <h1 class="text-3xl font-bold text-gray-800" style="font-family: 'Times New Roman', Times, serif;">Subscribe
+                to Our Newsletter</h1>
+            <h5 class="text-md text-gray-500 font-semibold">Subheading description and information can be added here
+            </h5>
+
+            <div class="mt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <input type="email" placeholder="Enter Your Email"
+                    class="px-3 py-2 border border-green-700 rounded-md w-full sm:w-64" />
+                <button class="px-6 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition w-full sm:w-auto">Subscribe
+                    Now</button>
+            </div>
+            <div class="flex items-center justify-center text-center mt-4">
+                <!-- Circle with Check Icon -->
+                <div
+                    class="w-6 h-6 p-1 border-2 border-black text-black rounded-full flex items-center justify-center relative top-2">
+                    <i class="fa-solid fa-check text-xl"></i>
+                </div>
+
+                <!-- Paragraph below the icon -->
+                <p class="mt-4 text-sm text-gray-400">Add footnote / additional information in here.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <section style="background-color: #eaf0e7;"
+        class="py-10 px-6 md:px-16 lg:px-24 flex flex-wrap gap-10 justify-between text-gray-800">
+
+        <!-- Left Brand Section -->
+        <div class="max-w-sm space-y-4">
+            <h1 class="text-2xl font-semibold text-black">Krishi Kutumb</h1>
+            <p class="text-sm leading-relaxed">
+                K2: Your all-in-one farm solution <br>
+                connecting all your farming activities <br>
+                with a focus on organic and sustainable <br>
+                agriculture!
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex gap-4 mt-4 text-xl text-gray-600">
+                <a href="#" class="hover:text-blue-600 transition bg-white px-3 py-1 rounded-full">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="hover:text-black transition bg-white px-3 py-1 rounded-full">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" class="hover:text-pink-500 transition bg-white px-3 py-1 rounded-full">
+                    <i class="fa-solid fa-camera-retro"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-2">
+            <h2 class="font-semibold mb-2 text-black">Quick Links</h2>
+            <div class="flex flex-col gap-[1px]">
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Help</a><br>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Contact us</a><br>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Lorem ipsum</a><br>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Lorem ipsum</a>
+            </div>
+        </div>
+
+        <!-- Community -->
+        <div class="space-y-2">
+            <h2 class="text font-semibold mb-2 text-black">Community</h2>
+            <div class="flex flex-col gap-[1px]">
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Events</a><br>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Blog</a>
+            </div>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="space-y-2">
+            <h2 class="text font-semibold mb-2 text-black">Follow Us</h2>
+            <div class="flex flex-col gap-[1px]">
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Instagram</a><br>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Facebook</a><br>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">YouTube</a><br>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">LinkedIn</a>
+            </div>
+        </div>
+        <div class="h-[1px] bg-gray-400 w-full"></div>
+        <div class="flex flex-col md:flex-row justify-between w-full font-semibold gap-4">
+            <div>
+                <p>&copy; Mohd. Aftab All rights reserved </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-7">
+                <p>Privacy & Policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Mobile Dropdown Toggles
+        const servicesDropdownButton = document.getElementById('services-dropdown-button');
+        const servicesDropdown = document.getElementById('services-dropdown');
+        const resourcesDropdownButton = document.getElementById('resources-dropdown-button');
+        const resourcesDropdown = document.getElementById('resources-dropdown');
+        
+        servicesDropdownButton.addEventListener('click', () => {
+            servicesDropdown.classList.toggle('hidden');
+            servicesDropdownButton.querySelector('i').classList.toggle('fa-chevron-down');
+            servicesDropdownButton.querySelector('i').classList.toggle('fa-chevron-up');
+        });
+        
+        resourcesDropdownButton.addEventListener('click', () => {
+            resourcesDropdown.classList.toggle('hidden');
+            resourcesDropdownButton.querySelector('i').classList.toggle('fa-chevron-down');
+            resourcesDropdownButton.querySelector('i').classList.toggle('fa-chevron-up');
+        });
+        
+        // FAQ Toggles
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.faq-icon');
+
+                content.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+
+</html>
