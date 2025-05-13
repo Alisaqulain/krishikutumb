@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishi Kutumb - Agricultural Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <nav class="fixed top-0 left-0 right-0 bg-white mx-auto px-4 py-4 flex items-center justify-between z-50">
+            <h1 class="text-2xl font-semibold text-black">Krishi Kutumb</h1>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-6 text-gray-700 font-medium relative">
+                <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+
+                <!-- Services Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition">Services</a>
+                    <ul
+                        class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Machine rental</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Labour / Technician Hire</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Farm Science</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">FPO</a></li>
+                    </ul>
+                </li>
+
+                <!-- Resources Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition">Resources</a>
+                    <ul
+                        class="absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+            </ul>
+            <button class="hidden md:block bg-green-700 text-white px-4 py-1 rounded-xl hover:bg-green-800 transition">
+                Get Started
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40">
+            <ul class="px-4 py-2 space-y-2">
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Home</a></li>
+
+                <!-- Mobile Dropdown - Services -->
+                <li>
+                    <button
+                        class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded"
+                        id="services-dropdown-button">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul id="services-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Consulting</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Soil Testing</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Equipment Rental</a></li>
+                    </ul>
+                </li>
+
+                <!-- Mobile Dropdown - Resources -->
+                <li>
+                    <button
+                        class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded"
+                        id="resources-dropdown-button">
+                        Resources <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul id="resources-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Video Tutorials</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Guides & PDFs</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">About</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Contact</a></li>
+                <li>
+                    <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition">
+                        Get Started
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="bg-gray-50 py-16 px-4 text-center ">
+        <p class="text-center text-black text-sm font-semibold uppercase ">
+            <i class="fa-solid fa-phone-alt text-green-600 mr-2"></i> Let's Connect
+        </p>
+
+        <h1 class="text-3xl md:text-4xl font-semibold my-6 text-black"
+            style="font-family: 'Times New Roman', Times, serif;">
+            Get in touch with <span class="text-green-600">us</span>
+        </h1>
+
+        <!-- Flexbox container for responsiveness -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div
+                class="bg-white shadow-lg rounded-xl p-6 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <img src="images/team.jpg" alt="Team" class="w-full h-48 object-cover rounded-lg mb-4">
+                <p class="text-gray-500 text-sm font-medium uppercase text-left">HAVE A QUESTION</p>
+                <h2 class="text-xl font-semibold text-black mb-2 text-left">Reach Our Team</h2>
+                <p class="text-gray-600 mb-4 text-left">Get assistance, ask anything, or simply understand how the
+                    platform works better</p>
+                <button
+                    class="bg-green-600 text-white py-2 px-6 rounded-xl hover:bg-green-700 transition block text-left">
+                    View More
+                </button>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="bg-white shadow-lg rounded-xl p-6 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <img src="images/phone.jpg" alt="Phone" class="w-full h-48 object-cover rounded-lg mb-4">
+                <p class="text-gray-500 text-sm font-medium uppercase text-left">ACCESS-ON-THE-GO</p>
+                <h2 class="text-xl font-semibold text-black mb-2 text-left">Get the App</h2>
+                <p class="text-gray-600 mb-4 text-left">Track crops, connect with others, and explore tools-right from
+                    your mobile device.</p>
+                <button
+                    class="bg-green-600 text-white py-2 px-6 rounded-xl  hover:bg-green-700 transition block text-left">
+                    View More
+                </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="bg-white shadow-lg rounded-xl p-6 transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <img src="images/podha.jpg" alt="Podha" class="w-full h-48 object-cover rounded-lg mb-4">
+                <p class="text-gray-500 text-sm font-medium uppercase text-left">COLLABORATE WITH US</p>
+                <h2 class="text-xl font-semibold text-black mb-2 text-left"> Grow Together</h2>
+                <p class="text-gray-600 mb-4 text-left">We're open to partnership that benefit farmers, communities, and
+                    sustainable agri..</p>
+                <button
+                    class="bg-green-600 text-white py-2 px-6 rounded-xl hover:bg-green-700 transition block text-left">
+                    View More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section  -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="flex flex-col lg:flex-row justify-between gap-8">
+            <!-- Contact Form -->
+            <div class="w-full lg:w-2/3 bg-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold text-left text-black mb-2"
+                    style="font-family: 'Times New Roman', Times, serif;">Contact Us</h2>
+                <p class="text-gray-500 text-[12px] mb-4">Call us at [Phone number] during our business hours</p>
+                <form action="#" method="POST">
+                    <!-- First Line: Name and Email -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="p-3 border border-gray-300 rounded-lg w-full" required>
+                        <input type="email" name="email" placeholder="Email Address"
+                            class="p-3 border border-gray-300 rounded-lg w-full" required>
+                    </div>
+
+                    <!-- Second Line: Phone and Category -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <input type="tel" name="phone" placeholder="Phone"
+                            class="p-3 border border-gray-300 rounded-lg w-full" required>
+                        <select name="category" class="p-3 border border-gray-300 rounded-lg w-full" required>
+                            <option value="">Select Category</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+
+                    <!-- Third Line: Message -->
+                    <div class="mb-6">
+                        <textarea name="message" rows="4" placeholder="Write a message"
+                            class="p-3 border border-gray-300 rounded-lg w-full" required></textarea>
+                    </div>
+
+                    <!-- Checkbox: Privacy Policy -->
+                    <div class="flex items-center mb-6">
+                        <input type="checkbox" name="privacy" class="mr-2" required>
+                        <label for="privacy" class="text-gray-600">You agree to our <span class="text-green-600">privacy
+                                policy</span></label>
+                    </div>
+
+                    <!-- Send Message Button -->
+                    <div>
+                        <button type="submit"
+                            class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md inline-flex items-center">
+                            Send Message
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Details, Office Location, and Email Cards -->
+            <div class="w-full lg:w-1/3 space-y-6">
+                <!-- Card 1: Contact Details -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-300 flex items-center gap-4">
+                    <i class="fa-solid fa-phone text-green-600 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-black mb-2">Contact Details</h3>
+                        <p class="text-gray-600 mb-1">+91 9876543210</p>
+                        <p class="text-gray-600">+91 1234567890</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Office Location -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-300 flex items-center gap-4">
+                    <i class="fa-solid fa-location-dot text-green-600 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-black mb-2">Office Location</h3>
+                        <p class="text-gray-600">123, Anycity, Anywhere in the <br> world</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Email -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-300 flex items-center gap-4">
+                    <i class="fa-solid fa-envelope text-green-600 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-black mb-2">Email Us</h3>
+                        <p class="text-gray-600">
+                            hello@reallygreatsite.com<br>
+                            goodbye@reallybadsite.com
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section style="background-color: #eaf0e7;"
+        class="py-10 px-6 md:px-16 lg:px-24 flex flex-wrap gap-10 justify-between text-gray-800">
+
+        <!-- Left Brand Section -->
+        <div class="max-w-sm space-y-4">
+            <h1 class="text-2xl font-semibold text-black">Krishi Kutumb</h1>
+            <p class="text-sm leading-relaxed">
+                K2: Your all-in-one farm solution <br>
+                connecting all your farming activities <br>
+                with a focus on organic and sustainable <br>
+                agriculture!
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex gap-4 mt-4 text-xl text-gray-600">
+                <a href="#" class="hover:text-blue-600 transition bg-white px-3 py-1 rounded-full">
+                    <i class="fa-brands fa-facebook-f"></i> <!-- Facebook Icon -->
+                </a>
+                <a href="#" class="hover:text-pink-600 transition bg-white px-3 py-1 rounded-full">
+                    <i class="fa-brands fa-instagram"></i> <!-- Instagram Icon -->
+                </a>
+                <a href="#" class="hover:text-blue-700 transition bg-white px-3 py-1 rounded-full">
+                    <i class="fa-brands fa-linkedin-in"></i> <!-- LinkedIn Icon -->
+                </a>
+                <a href="#" class="hover:text-red-600 transition bg-white px-3 py-1 rounded-full">
+                    <i class="fa-brands fa-youtube"></i> <!-- YouTube Icon -->
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-2 mt-4">
+            <h2 class="font-semibold mb-2 text-black">Quick Links</h2>
+            <div class="flex flex-col gap-2"> <!-- Reduced gap -->
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Help</a>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Contact us</a>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Lorem ipsum</a>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Lorem ipsum</a>
+            </div>
+        </div>
+
+        <!-- Community -->
+        <div class="space-y-2 mt-4"> <!-- Added top margin to separate from previous section -->
+            <h2 class="font-semibold mb-2 text-black">Community</h2>
+            <div class="flex flex-col gap-2"> <!-- Reduced gap -->
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Events</a>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Blog</a>
+            </div>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="space-y-2 mt-4"> <!-- Added top margin to separate from previous section -->
+            <h2 class="font-semibold mb-2 text-black">Follow Us</h2>
+            <div class="flex flex-col gap-2"> <!-- Reduced gap -->
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Instagram</a>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">Facebook</a>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">YouTube</a>
+                <a href="#" class="text-[14px] hover:text-green-600 transition">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="h-[1px] bg-gray-400 w-full"></div>
+        <div class="flex flex-col md:flex-row justify-between w-full font-semibold gap-4">
+            <div>
+                <p>&copy; 2025 Krishi Kutumb. All rights reserved </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-7">
+                <p>Privacy & Policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile Dropdown Toggles
+        const servicesDropdownButton = document.getElementById('services-dropdown-button');
+        const servicesDropdown = document.getElementById('services-dropdown');
+        const resourcesDropdownButton = document.getElementById('resources-dropdown-button');
+        const resourcesDropdown = document.getElementById('resources-dropdown');
+
+        servicesDropdownButton.addEventListener('click', () => {
+            servicesDropdown.classList.toggle('hidden');
+            servicesDropdownButton.querySelector('i').classList.toggle('fa-chevron-down');
+            servicesDropdownButton.querySelector('i').classList.toggle('fa-chevron-up');
+        });
+
+        resourcesDropdownButton.addEventListener('click', () => {
+            resourcesDropdown.classList.toggle('hidden');
+            resourcesDropdownButton.querySelector('i').classList.toggle('fa-chevron-down');
+            resourcesDropdownButton.querySelector('i').classList.toggle('fa-chevron-up');
+        });
+
+        // FAQ Toggles
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.faq-icon');
+
+                content.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+
+</html>

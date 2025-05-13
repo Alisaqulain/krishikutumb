@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Krishi Kutumb - Agricultural Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom styles to ensure consistency across devices */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            -webkit-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        /* Ensure dropdowns appear above other content */
+        .dropdown-content {
+            z-index: 1000;
+        }
+        /* Prevent horizontal scrolling */
+        .no-scroll {
+            overflow-x: hidden;
+        }
+        /* Maintain card heights while responsive */
+        .card-height-sm {
+            height: 300px;
+        }
+        .card-height-lg {
+            height: 550px;
+        }
+        @media (max-width: 768px) {
+            .card-height-sm, .card-height-lg {
+                height: auto;
+                min-height: 300px;
+            }
+            .card-row-2 {
+                margin-top: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 no-scroll">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <nav class="fixed top-0 left-0 right-0 bg-white mx-auto px-4 py-4 flex items-center justify-between z-50">
+            <h1 class="text-xl sm:text-2xl font-semibold text-black">Krishi Kutumb</h1>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-4 lg:space-x-6 text-gray-700 font-medium relative">
+                <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+
+                <!-- Services Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition flex items-center">
+                        Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <ul
+                        class="dropdown-content absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Machine rental</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Labour / Technician Hire</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Farm Science</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">FPO</a></li>
+                    </ul>
+                </li>
+
+                <!-- Resources Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition flex items-center">
+                        Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <ul
+                        class="dropdown-content absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+            </ul>
+            <button class="hidden md:block bg-green-700 text-white px-4 py-1 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+                Get Started
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <ul class="px-4 py-2 space-y-2">
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Home</a></li>
+
+                <!-- Mobile Dropdown - Services -->
+                <li>
+                    <button
+                        class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded"
+                        id="services-dropdown-button" aria-expanded="false">
+                        Services <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <ul id="services-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Machine rental</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Labour / Technician Hire</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Farm Science</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">FPO</a></li>
+                    </ul>
+                </li>
+
+                <!-- Mobile Dropdown - Resources -->
+                <li>
+                    <button
+                        class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded"
+                        id="resources-dropdown-button" aria-expanded="false">
+                        Resources <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <ul id="resources-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Video Tutorials</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">FPO</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">About</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Contact</a></li>
+                <li>
+                    <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+                        Get Started
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section  -->
+    <section class="bg-gray-50 pt-32 pb-16 px-6 sm:px-8 md:px-12 lg:px-16">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10">
+
+            <!-- Left: Text Content -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <button class="bg-green-50 text-green-700 font-semibold px-4 py-1 rounded-full mb-4 text-sm sm:text-base">
+                    Who we are!
+                </button>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 leading-tight"
+                    style="font-family: 'Times New Roman', Times, serif;">
+                    Empowering FPOs with Smart Digitalization
+                </h1>
+                <p class="text-gray-600 mb-6 text-base sm:text-lg">
+                    Transform your FPO with Technology - Streamline Operations, Simplify Finance,
+                    Boost Market Access, & Strengthen Farmer Networks.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+                    <button class="bg-green-600 text-white px-6 py-1 rounded-xl hover:bg-green-700 transition text-sm sm:text-base">
+                        Get Started
+                    </button>
+                    <button
+                        class="border border-green-600 text-green-600 px-6 py-1 rounded-xl hover:bg-green-100 transition text-sm sm:text-base">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <img src="images/men4.png" alt="Hero Image" class="w-full max-w-md mx-auto md:mx-0 md:max-w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- FPO Section  -->
+    <section class="py-12 sm:py-16 md:py-20 px-6 sm:px-8 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" style="font-family: 'Times New Roman', Times, serif;">
+                Empowering FPOs & Farmers
+            </h1>
+            <p class="text-gray-500 text-base sm:text-lg md:text-xl leading-relaxed">
+                One comprehensive digital platform provides everything FPOs need to streamline operations
+                <span class="hidden md:inline"><br></span>
+                and empower farmers with smarter tools and better access.
+            </p>
+        </div>
+    </section>
+    
+    <div class="px-6 sm:px-8">
+        <hr class="border-t-2 border-gray-300 w-full">
+    </div>
+
+    <!-- Card Section -->
+    <section class="py-12 sm:py-16 px-6 sm:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+
+            <!-- Row 1: First card smaller, second card larger -->
+            <div class="bg-white p-6 rounded-xl flex flex-col justify-between card-height-sm">
+                <div>
+                    <h2 class="text-lg sm:text-xl font-semibold text-black mb-3 sm:mb-4">Digital farm & Business Management</h2>
+                    <p class="text-gray-600 mb-4 text-sm sm:text-base">Efficiently assign and track finances, tasks, and resources across your
+                        entire FPO operation.</p>
+                </div>
+                <img src="images/girl1.png" alt="Digital farm" class="w-full h-auto object-cover rounded-md">
+            </div>
+
+            <div class="bg-white p-6 rounded-xl flex flex-col justify-between card-height-lg">
+                <div>
+                    <h2 class="text-lg sm:text-xl font-semibold text-black mb-3 sm:mb-4">Group Demand Aggregation</h2>
+                    <p class="text-gray-600 mb-4 text-sm sm:text-base">Enable bulk procurement and sales to secure better pricing for inputs and
+                        produce.</p>
+                </div>
+                <img src="images/girl2.png" alt="Group Demand" class="w-full h-auto object-cover rounded-md">
+            </div>
+
+            <!-- Row 2: First card larger, second card smaller -->
+            <div class="bg-white p-6 rounded-xl flex flex-col justify-between card-height-lg card-row-2" style="position: relative; top: -150px;">
+                <div>
+                    <h2 class="text-lg sm:text-xl font-semibold text-black mb-3 sm:mb-4">Expert Advisory & Market Linkage</h2>
+                    <p class="text-gray-600 mb-4 text-sm sm:text-base">Connect farmers with agricultural experts and new market opportunities to
+                        maximize value.</p>
+                </div>
+                <img src="images/girl3.png" alt="Expert Advisory" class="w-full h-auto object-cover rounded-md">
+            </div>
+
+            <div class="bg-white p-6 rounded-xl flex flex-col justify-between card-height-sm">
+                <div>
+                    <h2 class="text-lg sm:text-xl font-semibold text-black mb-3 sm:mb-4">Financial Planning & Transactions</h2>
+                    <p class="text-gray-600 mb-4 text-sm sm:text-base">Simplify payments, improve credit access, and manage financial resources
+                        digitally.</p>
+                </div>
+                <img src="images/girl4.png" alt="Financial Planning" class="w-full h-auto object-cover rounded-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Journey Section -->
+    <section class="pb-12 sm:pb-16 px-6 sm:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h5 class="font-semibold mb-2 text-green-600 text-xs sm:text-sm">Why Choose Us</h5>
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-4" style="font-family: 'Times New Roman', Times, serif;">Digital
+                Transformation Journey</h1>
+            <p class="text-gray-500 mb-8 text-base sm:text-lg">We adhere to the highest standards of quality in all our products and
+                services. <br class="hidden sm:block">
+                From streamlining operations to maximizing productivity, we help you embrace the future of agriculture.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                <div
+                    class="bg-white p-4 sm:p-6 rounded-xl hover:scale-105 transform transition-all flex flex-col justify-center items-center">
+                    <img src="images/fpo.png" alt="FPO" class="w-16 h-16 sm:w-20 sm:h-20">
+                    <hr class="border-gray-300 border-[0.01rem] w-full my-4">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">1. FPO</h3>
+                    <p class="text-gray-700 mb-4 text-sm sm:text-base">Our FPO is tailored to Lorem ipsum dolor sit amet.</p>
+                    <hr class="border-gray-300 border-[0.01rem] w-full my-4">
+                </div>
+
+                <div class="bg-white p-4 sm:p-6 rounded-xl hover:scale-105 transform transition-all flex flex-col justify-center items-center">
+                    <img src="images/digital platform.png" alt="Digital Platform" class="w-16 h-16 sm:w-20 sm:h-20">
+                    <hr class="border-gray-300 border-[0.01rem] w-full my-4">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">2. Digital Platform</h3>
+                    <p class="text-gray-700 mb-4 text-sm sm:text-base">Our FPO is tailored to Lorem ipsum dolor sit amet.</p>
+                    <hr class="border-gray-300 border-[0.01rem] w-full my-4">
+                </div>
+
+                <div class="bg-white p-4 sm:p-6 rounded-xl hover:scale-105 transform transition-all flex flex-col justify-center items-center">
+                    <img src="images/farmer benefit.png" alt="Farmer Benefit" class="w-16 h-16 sm:w-20 sm:h-20">
+                    <hr class="border-gray-300 border-[0.01rem] w-full my-4">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">3. Farmer's Benefits</h3>
+                    <p class="text-gray-700 mb-4 text-sm sm:text-base">Our FPO is tailored to Lorem ipsum dolor sit amet.</p>
+                    <hr class="border-gray-300 border-[0.01rem] w-full my-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FPO Digitalization Section  -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-8 py-12 sm:py-16 text-center">
+        <p class="text-xs sm:text-sm text-green-600 font-medium mb-2">Who can benefit?</p>
+        <h1 class="text-3xl sm:text-4xl font-bold mb-4">FPO Digitalization is for Every Agriculture Business!</h1>
+        <p class="text-gray-600 mb-8 sm:mb-12 text-base sm:text-lg">We adhere to the highest standards of quality in all our products and services.
+            From lorem ipsum to lorem ipsum.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 text-left hover:shadow-md transition-shadow">
+                <div class="flex items-center mb-3">
+                    <div class="bg-green-100 text-green-600 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 10h4v4H3v-4zm14 0h4v4h-4v-4zm-7 2h4m-2-2v4m-6 6h4v-4H6v4zm10 0h4v-4h-4v4z" />
+                        </svg>
+                    </div>
+                    <h2 class="font-semibold text-base sm:text-lg">Farmer Producer Organizations</h2>
+                </div>
+                <p class="text-gray-600 text-sm sm:text-base">Streamline demand aggregation, supply chain management, and day-to-day
+                    operations with our comprehensive digital tools.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 text-left hover:shadow-md transition-shadow">
+                <div class="flex items-center mb-3">
+                    <div class="bg-green-100 text-green-600 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m4-4H8" />
+                        </svg>
+                    </div>
+                    <h2 class="font-semibold text-base sm:text-lg">Agri-businesses</h2>
+                </div>
+                <p class="text-gray-600 text-sm sm:text-base">Gain better market access, improve operational efficiency, and connect directly
+                    with farmers through our platform.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 text-left hover:shadow-md transition-shadow">
+                <div class="flex items-center mb-3">
+                    <div class="bg-green-100 text-green-600 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-6 14h4m-2-2v4m-6-6h12" />
+                        </svg>
+                    </div>
+                    <h2 class="font-semibold text-base sm:text-lg">Cooperatives & Societies</h2>
+                </div>
+                <p class="text-gray-600 text-sm sm:text-base">Digitize member engagement, resource management, and collective activities to
+                    enhance transparency and efficiency.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 text-left hover:shadow-md transition-shadow">
+                <div class="flex items-center mb-3">
+                    <div class="bg-green-100 text-green-600 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h2 class="font-semibold text-base sm:text-lg">Government & NGOs</h2>
+                </div>
+                <p class="text-gray-600 text-sm sm:text-base">Support and integrate digital solutions for rural development, monitoring, and
+                    agricultural extension services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="max-w-4xl mx-auto px-6 sm:px-8 py-12 sm:py-16 text-center">
+        <p class="text-xs sm:text-sm text-green-600 font-medium mb-2">Let's talk!</p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Want to Digitize your FPO? Let's Talk!</h2>
+        <p class="text-gray-600 mb-6 sm:mb-10 text-base sm:text-lg">We adhere to the highest standards of quality in all our products and services.
+            From lorem ipsum to lorem ipsum.</p>
+
+        <form class="space-y-4 sm:space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+                <input type="text" placeholder="Full Name"
+                    class="w-full bg-gray-100 border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base" />
+                <input type="text" placeholder="Organization Name"
+                    class="w-full bg-gray-100 border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base" />
+                <input type="email" placeholder="Email Address"
+                    class="w-full bg-gray-100 border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base" />
+                <input type="tel" placeholder="Phone Number"
+                    class="w-full bg-gray-100 border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base" />
+            </div>
+
+            <textarea placeholder="Write a Message" rows="5"
+                class="w-full bg-gray-100 border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base"></textarea>
+
+            <div class="text-left">
+                <button type="submit"
+                    class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md inline-flex items-center text-sm sm:text-base">
+                    Send Message
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #eaf0e7;"
+        class="py-10 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 flex flex-wrap gap-6 sm:gap-8 md:gap-10 justify-between text-gray-800">
+
+        <!-- Left Brand Section -->
+        <div class="w-full sm:max-w-sm space-y-3 sm:space-y-4">
+            <h1 class="text-xl sm:text-2xl font-semibold text-black">Krishi Kutumb</h1>
+            <p class="text-xs sm:text-sm leading-relaxed">
+                K2: Your all-in-one farm solution <br>
+                connecting all your farming activities <br>
+                with a focus on organic and sustainable <br>
+                agriculture!
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex gap-3 sm:gap-4 mt-3 sm:mt-4 text-lg sm:text-xl text-gray-600">
+                <a href="#" class="hover:text-blue-600 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="hover:text-pink-600 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="hover:text-blue-700 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="hover:text-red-600 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-1 sm:space-y-2">
+            <h2 class="font-semibold text-sm sm:text-base mb-1 sm:mb-2 text-black">Quick Links</h2>
+            <div class="flex flex-col gap-1 sm:gap-2">
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Help</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Contact us</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Lorem ipsum</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Lorem ipsum</a>
+            </div>
+        </div>
+
+        <!-- Community -->
+        <div class="space-y-1 sm:space-y-2">
+            <h2 class="font-semibold text-sm sm:text-base mb-1 sm:mb-2 text-black">Community</h2>
+            <div class="flex flex-col gap-1 sm:gap-2">
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Events</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Blog</a>
+            </div>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="space-y-1 sm:space-y-2">
+            <h2 class="font-semibold text-sm sm:text-base mb-1 sm:mb-2 text-black">Follow Us</h2>
+            <div class="flex flex-col gap-1 sm:gap-2">
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Instagram</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Facebook</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">YouTube</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="h-[1px] bg-gray-400 w-full"></div>
+        <div class="flex flex-col md:flex-row justify-between w-full font-semibold gap-3 sm:gap-4 text-xs sm:text-sm">
+            <div>
+                <p>&copy; 2025 Krishi Kutumb. All rights reserved </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:gap-7">
+                <a href="#" class="hover:text-green-600">Privacy & Policy</a>
+                <a href="#" class="hover:text-green-600">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Toggle overflow hidden on body to prevent scrolling when menu is open
+            body.classList.toggle('overflow-hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && e.target !== mobileMenuButton) {
+                mobileMenu.classList.add('hidden');
+                body.classList.remove('overflow-hidden');
+            }
+        });
+
+        // Mobile Dropdown Toggles
+        const toggleDropdown = (buttonId, dropdownId) => {
+            const button = document.getElementById(buttonId);
+            const dropdown = document.getElementById(dropdownId);
+            const icon = button.querySelector('i');
+
+            button.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent event from bubbling to document
+                dropdown.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+                
+                // Update aria-expanded attribute for accessibility
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', !isExpanded);
+            });
+        };
+
+        toggleDropdown('services-dropdown-button', 'services-dropdown');
+        toggleDropdown('resources-dropdown-button', 'resources-dropdown');
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', () => {
+            document.querySelectorAll('[id$="-dropdown"]').forEach(dropdown => {
+                dropdown.classList.add('hidden');
+            });
+            document.querySelectorAll('[id$="-dropdown-button"]').forEach(button => {
+                button.setAttribute('aria-expanded', 'false');
+                const icon = button.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+
+        // Prevent dropdowns from closing when clicking inside them
+        document.querySelectorAll('[id$="-dropdown"]').forEach(dropdown => {
+            dropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

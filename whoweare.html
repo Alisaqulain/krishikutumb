@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Krishi Kutumb - Agricultural Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom styles to ensure consistency across devices */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            -webkit-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        /* Ensure dropdowns appear above other content */
+        .dropdown-content {
+            z-index: 1000;
+        }
+        /* Prevent horizontal scrolling */
+        .no-scroll {
+            overflow-x: hidden;
+        }
+        /* Hero section background fallback */
+        .hero-section {
+            background-color: #f9fafb; /* Fallback if image doesn't load */
+        }
+        /* Image hover effects */
+        .hover-rotate {
+            transition: transform 0.3s ease;
+        }
+        .hover-rotate:hover {
+            transform: rotate(0deg) !important;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 no-scroll">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <nav class="fixed top-0 left-0 right-0 bg-white mx-auto px-4 py-4 flex items-center justify-between z-50">
+            <h1 class="text-xl sm:text-2xl font-semibold text-black">Krishi Kutumb</h1>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-4 lg:space-x-6 text-gray-700 font-medium relative">
+                <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+
+                <!-- Services Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition flex items-center">
+                        Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <ul
+                        class="dropdown-content absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Machine rental</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Labour / Technician Hire</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Farm Science</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">FPO</a></li>
+                    </ul>
+                </li>
+
+                <!-- Resources Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition flex items-center">
+                        Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <ul
+                        class="dropdown-content absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+            </ul>
+            <button class="hidden md:block bg-green-700 text-white px-4 py-1 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+                Get Started
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <ul class="px-4 py-2 space-y-2">
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Home</a></li>
+
+                <!-- Mobile Dropdown - Services -->
+                <li>
+                    <button
+                        class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded"
+                        id="services-dropdown-button" aria-expanded="false">
+                        Services <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <ul id="services-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Machine rental</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Labour / Technician Hire</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Farm Science</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">FPO</a></li>
+                    </ul>
+                </li>
+
+                <!-- Mobile Dropdown - Resources -->
+                <li>
+                    <button
+                        class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded"
+                        id="resources-dropdown-button" aria-expanded="false">
+                        Resources <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <ul id="resources-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Video Tutorials</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">FPO</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">About</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Contact</a></li>
+                <li>
+                    <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+                        Get Started
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section pt-32 pb-20 px-6 sm:px-8 md:px-12 lg:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <!-- Left Content -->
+            <div class="order-2 md:order-1">
+                <div class="mb-4">
+                    <span class="inline-block bg-gray-100 text-gray-700 px-4 py-1 rounded-full text-xs sm:text-sm font-medium">
+                        Who we are!
+                    </span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6"
+                    style="font-family: 'Times New Roman', Times, serif;">
+                    Together, We<br />
+                    Cultivate a <span class="text-green-600">Future</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-600 mb-6">
+                    We're on a mission to bring together farmers, workers, and agricultural professionals to share
+                    knowledge, grow sustainably, and build stronger farming communities.
+                </p>
+                <div class="mb-8">
+                    <a href="#"
+                        class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-sm sm:text-base font-semibold transition">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Quote/Testimonial -->
+                <div class="mt-8 bg-green-50 border border-green-200 p-4 sm:p-5 rounded-lg">
+                    <p class="text-gray-800 italic mb-3 text-sm sm:text-base">
+                        "I started this platform to bridge the gaps in agriculture—so every farmer, worker, and expert
+                        can grow together"
+                    </p>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-4 h-4 rounded-full bg-black"></div>
+                        <span class="text-xs sm:text-sm text-gray-700">
+                            <strong class="text-black">Mohan Paliwal</strong> - Founder, Krishi Kutumb
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="order-1 md:order-2 flex justify-center">
+                <img src="images/girl5.png" alt="Farmer Woman" 
+                     class="rounded-xl w-full max-w-xs sm:max-w-sm md:max-w-md shadow-md hover-rotate" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Edge Section -->
+    <section class="py-12 sm:py-16 px-6 sm:px-8 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <!-- Centered Headings -->
+            <div class="text-center mb-8 sm:mb-10">
+                <p class="text-green-600 font-medium mb-2 text-sm sm:text-base">Our Edge</p>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">What makes us different</h2>
+            </div>
+
+            <!-- Grid Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
+                <!-- Left Content -->
+                <div>
+                    <p class="text-gray-700 mb-4 text-sm sm:text-base">
+                        We're not just here to offer a service — we're here to create a better experience. Every decision we
+                        make is centered around people: their time, their needs, and their trust.
+                    </p>
+                    <p class="text-gray-700 mb-6 sm:mb-8 text-sm sm:text-base">
+                        From the way we communicate to how we solve problems, our focus is always on clarity, reliability,
+                        and care. We believe in doing things differently — with transparency, intention, and a human touch.
+                    </p>
+
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                        <div class="border border-green-200 rounded-lg p-3 sm:p-4 text-center">
+                            <p class="text-gray-500 text-xs sm:text-sm mb-1">Happy Clients</p>
+                            <p class="text-xl sm:text-2xl font-semibold">1500+</p>
+                        </div>
+                        <div class="border border-green-200 rounded-lg p-3 sm:p-4 text-center">
+                            <p class="text-gray-500 text-xs sm:text-sm mb-1">Avg. Response</p>
+                            <p class="text-xl sm:text-2xl font-semibold">&lt;24Hrs</p>
+                        </div>
+                        <div class="border border-green-200 rounded-lg p-3 sm:p-4 text-center">
+                            <p class="text-gray-500 text-xs sm:text-sm mb-1">Founding Year</p>
+                            <p class="text-xl sm:text-2xl font-semibold">2023</p>
+                        </div>
+                        <div class="border border-green-200 rounded-lg p-3 sm:p-4 text-center">
+                            <p class="text-gray-500 text-xs sm:text-sm mb-1">Members</p>
+                            <p class="text-xl sm:text-2xl font-semibold">10+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Images -->
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-0 sm:flex-nowrap sm:space-x-[-20px] md:space-x-[-30px] mt-6 sm:mt-0">
+                    <img src="images/avatar1.png" alt="Farm scene" 
+                         class="w-24 sm:w-28 md:w-32 rounded-xl rotate-[-6deg] hover-rotate">
+                    <img src="images/avatar2.png" alt="Seeds in hand" 
+                         class="w-24 sm:w-28 md:w-32 rounded-xl z-10 hover-rotate">
+                    <img src="images/avatar3.png" alt="Happy farmer" 
+                         class="w-24 sm:w-28 md:w-32 rounded-xl rotate-[6deg] hover-rotate">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #eaf0e7;"
+        class="py-10 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 flex flex-wrap gap-6 sm:gap-8 md:gap-10 justify-between text-gray-800">
+
+        <!-- Left Brand Section -->
+        <div class="w-full sm:max-w-sm space-y-3 sm:space-y-4">
+            <h1 class="text-xl sm:text-2xl font-semibold text-black">Krishi Kutumb</h1>
+            <p class="text-xs sm:text-sm leading-relaxed">
+                K2: Your all-in-one farm solution <br>
+                connecting all your farming activities <br>
+                with a focus on organic and sustainable <br>
+                agriculture!
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex gap-3 sm:gap-4 mt-3 sm:mt-4 text-lg sm:text-xl text-gray-600">
+                <a href="#" class="hover:text-blue-600 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="hover:text-pink-600 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="hover:text-blue-700 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="hover:text-red-600 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-1 sm:space-y-2">
+            <h2 class="font-semibold text-sm sm:text-base mb-1 sm:mb-2 text-black">Quick Links</h2>
+            <div class="flex flex-col gap-1 sm:gap-2">
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Help</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Contact us</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Lorem ipsum</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Lorem ipsum</a>
+            </div>
+        </div>
+
+        <!-- Community -->
+        <div class="space-y-1 sm:space-y-2">
+            <h2 class="font-semibold text-sm sm:text-base mb-1 sm:mb-2 text-black">Community</h2>
+            <div class="flex flex-col gap-1 sm:gap-2">
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Events</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Blog</a>
+            </div>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="space-y-1 sm:space-y-2">
+            <h2 class="font-semibold text-sm sm:text-base mb-1 sm:mb-2 text-black">Follow Us</h2>
+            <div class="flex flex-col gap-1 sm:gap-2">
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Instagram</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Facebook</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">YouTube</a>
+                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="h-[1px] bg-gray-400 w-full"></div>
+        <div class="flex flex-col md:flex-row justify-between w-full font-semibold gap-3 sm:gap-4 text-xs sm:text-sm">
+            <div>
+                <p>&copy; 2025 Krishi Kutumb. All rights reserved </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:gap-7">
+                <a href="#" class="hover:text-green-600">Privacy & Policy</a>
+                <a href="#" class="hover:text-green-600">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body;
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Toggle overflow hidden on body to prevent scrolling when menu is open
+            body.classList.toggle('overflow-hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && e.target !== mobileMenuButton) {
+                mobileMenu.classList.add('hidden');
+                body.classList.remove('overflow-hidden');
+            }
+        });
+
+        // Mobile Dropdown Toggles
+        const toggleDropdown = (buttonId, dropdownId) => {
+            const button = document.getElementById(buttonId);
+            const dropdown = document.getElementById(dropdownId);
+            const icon = button.querySelector('i');
+
+            button.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent event from bubbling to document
+                dropdown.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+                
+                // Update aria-expanded attribute for accessibility
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', !isExpanded);
+            });
+        };
+
+        toggleDropdown('services-dropdown-button', 'services-dropdown');
+        toggleDropdown('resources-dropdown-button', 'resources-dropdown');
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', () => {
+            document.querySelectorAll('[id$="-dropdown"]').forEach(dropdown => {
+                dropdown.classList.add('hidden');
+            });
+            document.querySelectorAll('[id$="-dropdown-button"]').forEach(button => {
+                button.setAttribute('aria-expanded', 'false');
+                const icon = button.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+
+        // Prevent dropdowns from closing when clicking inside them
+        document.querySelectorAll('[id$="-dropdown"]').forEach(dropdown => {
+            dropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
