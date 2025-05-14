@@ -49,96 +49,100 @@
     <!-- Navbar -->
     <header class="bg-white shadow">
         <nav class="fixed top-0 left-0 right-0 bg-white mx-auto px-4 py-4 flex items-center justify-between z-50">
-            <h1 class="text-xl sm:text-2xl font-semibold text-black">Krishi Kutumb</h1>
-
-            <!-- Mobile Menu Button -->
-            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-
-            <!-- Desktop Navigation -->
-            <ul class="hidden md:flex space-x-4 lg:space-x-6 text-gray-700 font-medium relative">
-                <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
-
-                <!-- Services Dropdown -->
-                <li class="group relative">
-                    <a href="#" class="hover:text-green-600 transition flex items-center">
-                        Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                    </a>
-                    <ul
-                        class="dropdown-content absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Machine rental</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Labour / Technician Hire</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Farm Science</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">FPO</a></li>
-                    </ul>
-                </li>
-
-                <!-- Resources Dropdown -->
-                <li class="group relative">
-                    <a href="#" class="hover:text-green-600 transition flex items-center">
-                        Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                    </a>
-                    <ul
-                        class="dropdown-content absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
-                <li><a href="#" class="hover:text-green-600 transition">About</a></li>
-                <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
-            </ul>
-            <button class="hidden md:block bg-green-700 text-white px-4 py-1 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
-                Get Started
-            </button>
+          
+          <!-- Logo and Title -->
+          <div class="flex items-center gap-3">
+            <a href="index.html">
+              <img src="images/K2_Krishi_Kutumb_.png" alt="Krishi Kutumb Logo" class="h-16 w-auto object-contain" />
+            </a>
+            <h1 class="text-[30px] sm:text-2xl font-semibold text-black">            <a href="index.html" class="text-4xl">
+                Krishi Kutumb</a></h1>
+          </div>
+      
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+      
+          <!-- Desktop Navigation -->
+          <ul class="hidden md:flex space-x-4 lg:space-x-8 text-gray-700 font-medium relative">
+            <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+            
+            <!-- Services Dropdown -->
+            <li class="group relative">
+              <a href="#" class="hover:text-green-600 transition flex items-center">
+                Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </a>
+              <ul class="dropdown-content absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Machine rental</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Labour / Technician Hire</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Farm Science</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">FPO</a></li>
+              </ul>
+            </li>
+      
+            <!-- Resources Dropdown -->
+            <li class="group relative">
+              <a href="#" class="hover:text-green-600 transition flex items-center">
+                Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </a>
+              <ul class="dropdown-content absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
+            <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+            <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+          </ul>
+      
+          <!-- Get Started Button -->
+          <button class="hidden md:block bg-green-700 text-white px-4 py-1 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+            Get Started
+          </button>
         </nav>
-
+      
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto">
-            <ul class="px-4 py-2 space-y-2">
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Home</a></li>
-
-                <!-- Mobile Dropdown - Services -->
-                <li>
-                    <button
-                        class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded"
-                        id="services-dropdown-button" aria-expanded="false">
-                        Services <i class="fas fa-chevron-down faq-icon"></i>
-                    </button>
-                    <ul id="services-dropdown" class="hidden pl-6 space-y-1 mt-1">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Machine rental</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Labour / Technician Hire</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Farm Science</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">FPO</a></li>
-                    </ul>
-                </li>
-
-                <!-- Mobile Dropdown - Resources -->
-                <li>
-                    <button
-                        class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded"
-                        id="resources-dropdown-button" aria-expanded="false">
-                        Resources <i class="fas fa-chevron-down faq-icon"></i>
-                    </button>
-                    <ul id="resources-dropdown" class="hidden pl-6 space-y-1 mt-1">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Blog Articles</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Video Tutorials</a></li>
-                    </ul>
-                </li>
-
+          <ul class="px-4 py-2 space-y-2">
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Home</a></li>
+      
+            <!-- Mobile Dropdown - Services -->
+            <li>
+              <button class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded" id="services-dropdown-button">
+                Services <i class="fas fa-chevron-down faq-icon"></i>
+              </button>
+              <ul id="services-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Machine rental</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Labour / Technician Hire</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Farm Science</a></li>
                 <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">FPO</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">About</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Contact</a></li>
-                <li>
-                    <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
-                        Get Started
-                    </button>
-                </li>
-            </ul>
+              </ul>
+            </li>
+      
+            <!-- Mobile Dropdown - Resources -->
+            <li>
+              <button class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded" id="resources-dropdown-button">
+                Resources <i class="fas fa-chevron-down faq-icon"></i>
+              </button>
+              <ul id="resources-dropdown" class="hidden pl-6 space-y-1 mt-1">
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Blog Articles</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Video Tutorials</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">FPO</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">About</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Contact</a></li>
+            <li>
+              <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+                Get Started
+              </button>
+            </li>
+          </ul>
         </div>
-    </header>
+      </header>
 
     <!-- Hero Section -->
     <section class="hero-section pt-32 pb-20 px-6 sm:px-8 md:px-12 lg:px-16">
@@ -183,7 +187,7 @@
 
             <!-- Right Image -->
             <div class="order-1 md:order-2 flex justify-center">
-                <img src="images/girl5.png" alt="Farmer Woman" 
+                <img src="images/who1.png" alt="Farmer Woman" 
                      class="rounded-xl w-full max-w-xs sm:max-w-sm md:max-w-md shadow-md hover-rotate" />
             </div>
         </div>
@@ -234,90 +238,88 @@
 
                 <!-- Right Images -->
                 <div class="flex flex-wrap justify-center gap-4 sm:gap-0 sm:flex-nowrap sm:space-x-[-20px] md:space-x-[-30px] mt-6 sm:mt-0">
-                    <img src="images/avatar1.png" alt="Farm scene" 
-                         class="w-24 sm:w-28 md:w-32 rounded-xl rotate-[-6deg] hover-rotate">
-                    <img src="images/avatar2.png" alt="Seeds in hand" 
-                         class="w-24 sm:w-28 md:w-32 rounded-xl z-10 hover-rotate">
-                    <img src="images/avatar3.png" alt="Happy farmer" 
-                         class="w-24 sm:w-28 md:w-32 rounded-xl rotate-[6deg] hover-rotate">
+                    <img src="images/whp2.png" alt="Farm scene" 
+                    class="w-[500px] sm:w-[600px] md:w-[700px] lg:w-[800px] rounded-xl rotate-[-6deg] hover:rotate-0 transition duration-300 ease-in-out">
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer style="background-color: #eaf0e7;"
-        class="py-10 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 flex flex-wrap gap-6 sm:gap-8 md:gap-10 justify-between text-gray-800">
-
+    <footer>
+        <section style="background-color: #eaf0e7;"
+        class="py-12 px-6 md:px-20 lg:px-28 flex flex-wrap justify-between items-start gap-10 text-gray-800 text-sm">
+    
         <!-- Left Brand Section -->
-        <div class="w-full sm:max-w-sm space-y-3 sm:space-y-4">
-            <h1 class="text-xl sm:text-2xl font-semibold text-black">Krishi Kutumb</h1>
-            <p class="text-xs sm:text-sm leading-relaxed">
-                K2: Your all-in-one farm solution <br>
-                connecting all your farming activities <br>
-                with a focus on organic and sustainable <br>
+        <div class="max-w-sm space-y-4">
+            <h1 class="text-2xl font-semibold text-black">Krishi Kutumb</h1>
+            <p class="leading-relaxed text-[14px] text-gray-700">
+                K2: Your all-in-one farm solution<br>
+                connecting all your farming activities<br>
+                with a focus on organic and sustainable<br>
                 agriculture!
             </p>
-
+    
             <!-- Social Icons -->
-            <div class="flex gap-3 sm:gap-4 mt-3 sm:mt-4 text-lg sm:text-xl text-gray-600">
-                <a href="#" class="hover:text-blue-600 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
+            <div class="flex gap-3 pt-2 text-xl text-gray-600">
+                <a href="#" class="hover:text-blue-600 transition bg-white px-2.5 py-1 rounded-full">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#" class="hover:text-pink-600 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
-                    <i class="fa-brands fa-instagram"></i>
+                <a href="#" class="hover:text-black transition bg-white px-2.5 py-1 rounded-full">
+                    <i class="fa-brands fa-x-twitter"></i>
                 </a>
-                <a href="#" class="hover:text-blue-700 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="hover:text-red-600 transition bg-white px-2.5 py-1 sm:px-3 sm:py-1 rounded-full">
-                    <i class="fa-brands fa-youtube"></i>
+                <a href="#" class="hover:text-pink-500 transition bg-white px-2.5 py-1 rounded-full">
+                    <i class="fa-solid fa-camera-retro"></i>
                 </a>
             </div>
         </div>
-
+    
         <!-- Quick Links -->
-        <div class="space-y-1 sm:space-y-2">
-            <h2 class="font-semibold text-sm sm:text-base mb-1 sm:mb-2 text-black">Quick Links</h2>
-            <div class="flex flex-col gap-1 sm:gap-2">
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Help</a>
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Contact us</a>
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Lorem ipsum</a>
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Lorem ipsum</a>
-            </div>
+        <div class="space-y-2">
+            <h2 class="font-semibold mb-1 text-black">Quick Links</h2>
+            <ul class="space-y-[20px] text-[14px]">
+                <li><a href="#" class="hover:text-green-600 transition">Help</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Contact Us</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Lorem ipsum</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Lorem ipsum</a></li>
+            </ul>
         </div>
-
+    
         <!-- Community -->
-        <div class="space-y-1 sm:space-y-2">
-            <h2 class="font-semibold text-sm sm:text-base mb-1 sm:mb-2 text-black">Community</h2>
-            <div class="flex flex-col gap-1 sm:gap-2">
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Events</a>
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Blog</a>
-            </div>
+        <div class="space-y-2">
+            <h2 class="font-semibold mb-1 text-black">Community</h2>
+            <ul class="space-y-[20px] text-[14px]">
+                <li><a href="#" class="hover:text-green-600 transition">Events</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Blog</a></li>
+            </ul>
         </div>
-
+    
         <!-- Follow Us -->
-        <div class="space-y-1 sm:space-y-2">
-            <h2 class="font-semibold text-sm sm:text-base mb-1 sm:mb-2 text-black">Follow Us</h2>
-            <div class="flex flex-col gap-1 sm:gap-2">
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Instagram</a>
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">Facebook</a>
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">YouTube</a>
-                <a href="#" class="text-xs sm:text-sm hover:text-green-600 transition">LinkedIn</a>
+        <div class="space-y-2">
+            <h2 class="font-semibold mb-1 text-black">Follow Us</h2>
+            <ul class="space-y-[20px] text-[14px]">
+                <li><a href="#" class="hover:text-green-600 transition">Instagram</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Facebook</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">YouTube</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">LinkedIn</a></li>
+            </ul>
+        </div>
+    
+        <!-- Divider -->
+        <div class="w-full h-px bg-gray-300 mt-10 mb-4"></div>
+    
+        <!-- Bottom Footer -->
+        <div class="flex flex-col md:flex-row justify-between items-center w-full text-[13px] font-medium gap-4 text-gray-700">
+            <p>©2025 Krishi Kutumb. All rights reserved</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:underline">Privacy & Policy</a>
+                <a href="#" class="hover:underline">Terms & Conditions</a>
             </div>
         </div>
-
-        <div class="h-[1px] bg-gray-400 w-full"></div>
-        <div class="flex flex-col md:flex-row justify-between w-full font-semibold gap-3 sm:gap-4 text-xs sm:text-sm">
-            <div>
-                <p>&copy; 2025 Krishi Kutumb. All rights reserved </p>
-            </div>
-            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:gap-7">
-                <a href="#" class="hover:text-green-600">Privacy & Policy</a>
-                <a href="#" class="hover:text-green-600">Terms & Conditions</a>
-            </div>
-        </div>
-    </footer>
+    </section>
+    
+       </footer>
 
     <!-- JavaScript -->
     <script>
