@@ -17,106 +17,114 @@
 <body class="bg-gray-50">
     <!-- Navbar -->
     <header class="bg-white shadow">
-        <nav class="fixed top-0 left-0 right-0 bg-white mx-auto px-4 py-4 flex items-center justify-between z-50">
-          
-          <!-- Logo and Title -->
-          <div class="flex items-center gap-3">
-            <a href="index.html">
-              <img src="images/K2_Krishi_Kutumb_.png" alt="Krishi Kutumb Logo" class="h-16 w-auto object-contain" />
-            </a>
-            <h1 class="text-[30px] sm:text-2xl font-semibold text-black">            <a href="index.html" class="text-4xl">
-                Krishi Kutumb</a></h1>
-          </div>
-      
-          <!-- Mobile Menu Button -->
-          <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
-            <i class="fas fa-bars text-2xl"></i>
-          </button>
-      
-          <!-- Desktop Navigation -->
-          <ul class="hidden md:flex space-x-4 lg:space-x-8 text-gray-700 font-medium relative">
-            <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
-            
-            <!-- Services Dropdown -->
-            <li class="group relative">
-              <a href="#" class="hover:text-green-600 transition flex items-center">
-                Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
-              </a>
-              <ul class="dropdown-content absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Machine rental</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Labour / Technician Hire</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Farm Science</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">FPO</a></li>
-              </ul>
-            </li>
-      
-            <!-- Resources Dropdown -->
-            <li class="group relative">
-              <a href="#" class="hover:text-green-600 transition flex items-center">
-                Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
-              </a>
-              <ul class="dropdown-content absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
-              </ul>
-            </li>
-      
-            <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
-            <li><a href="#" class="hover:text-green-600 transition">About</a></li>
-            <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
-          </ul>
-      
-          <!-- Get Started Button -->
-          <button class="hidden md:block bg-green-700 text-white px-4 py-1 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
-            Get Started
-          </button>
+        <nav class="fixed top-0 left-0 right-0 bg-white px-4 sm:px-6 py-4 flex items-center justify-between z-50">
+            <!-- Logo and Title -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a href="index.html">
+                    <img src="images/K2_Krishi_Kutumb_.png" alt="Krishi Kutumb Logo" class="h-12 sm:h-24 w-auto object-contain" />
+                </a>
+                <h1 class="text-xl sm:text-2xl font-semibold text-black">
+                    <a href="index.html" class="hover:text-green-600 transition text-green-700 text-3xl">Krishi Kutumb</a>
+                </h1>
+            </div>
+    
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl sm:text-3xl"></i>
+            </button>
+    
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-4 lg:space-x-8 text-gray-700 font-medium items-center">
+                <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+                
+                <!-- Services Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition flex items-center">
+                        Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <ul class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a></li>
+  
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
+             
+                    </ul>
+                </li>
+    
+                <!-- Resources Dropdown -->
+                <li class="group relative">
+                    <a href="#" class="hover:text-green-600 transition flex items-center">
+                        Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <ul class="absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
+                    </ul>
+                </li>
+    
+                <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+                <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+            </ul>
+    
+            <!-- Get Started Button (Desktop) -->
+            <button class="hidden md:block bg-green-700 text-white px-4 py-1.5 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+                <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
+            </button>
         </nav>
-      
+    
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto">
-          <ul class="px-4 py-2 space-y-2">
-            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Home</a></li>
-      
-            <!-- Mobile Dropdown - Services -->
-            <li>
-              <button class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded" id="services-dropdown-button">
-                Services <i class="fas fa-chevron-down faq-icon"></i>
-              </button>
-              <ul id="services-dropdown" class="hidden pl-6 space-y-1 mt-1">
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Machine rental</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Labour / Technician Hire</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Farm Science</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">FPO</a></li>
-              </ul>
-            </li>
-      
-            <!-- Mobile Dropdown - Resources -->
-            <li>
-              <button class="w-full text-left px-4 py-2 flex justify-between items-center hover:bg-green-100 rounded" id="resources-dropdown-button">
-                Resources <i class="fas fa-chevron-down faq-icon"></i>
-              </button>
-              <ul id="resources-dropdown" class="hidden pl-6 space-y-1 mt-1">
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Blog Articles</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Video Tutorials</a></li>
-              </ul>
-            </li>
-      
-            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">FPO</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">About</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-green-100 rounded">Contact</a></li>
-            <li>
-              <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
-                Get Started
-              </button>
-            </li>
-          </ul>
+        <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto transition-all duration-300">
+            <ul class="px-4 py-4 space-y-3">
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Home</a></li>
+    
+                <!-- Mobile Dropdown - Services -->
+                <li>
+                    <button class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base" id="services-dropdown-button">
+                        Services <i class="fas fa-chevron-down faq-icon text-sm"></i>
+                    </button>
+                    <ul id="services-dropdown" class="hidden pl-6 space-y-2 mt-2">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a></li>
+  
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
+                    </ul>
+                </li>
+    
+                <!-- Mobile Dropdown - Resources -->
+                <li>
+                    <button class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base" id="resources-dropdown-button">
+                        Resources <i class="fas fa-chevron-down faq-icon text-sm"></i>
+                    </button>
+                    <ul id="resources-dropdown" class="hidden pl-6 space-y-2 mt-2">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Blog Articles</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Video Tutorials</a></li>
+                    </ul>
+                </li>
+    
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">FPO</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">About</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Contact</a></li>
+                <li>
+                    <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition text-base">
+                        <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
+                    </button>
+                </li>
+            </ul>
         </div>
-      </header>
+    </header>
+  
 
 
     <!-- Hero Section -->
-    <section class="bg-gray-50 py-16 px-4 text-center mt-10 ">
-        <p class="text-center text-black text-sm font-semibold uppercase ">
+    <section class="bg-gray-50 py-16 px-4 text-center mt-24 ">
+        <p class="text-center text-black text-xl font-bold uppercase ">
             <i class="fa-solid fa-phone-alt text-green-600 mr-2"></i> Let's Connect
         </p>
 
@@ -174,58 +182,91 @@
 
     <!-- Contact Section  -->
     <section class="py-16 px-4 bg-gray-50">
-        <div class="flex flex-col lg:flex-row justify-between gap-8">
+        <div class="max-w-[80%] mx-auto flex flex-col lg:flex-row justify-between gap-8">
             <!-- Contact Form -->
             <div class="w-full lg:w-2/3 bg-white p-6 rounded-xl shadow-lg">
                 <h2 class="text-2xl font-semibold text-left text-black mb-2"
                     style="font-family: 'Times New Roman', Times, serif;">Contact Us</h2>
-                <p class="text-gray-500 text-[12px] mb-4">Call us at [Phone number] during our business hours</p>
-                <form action="#" method="POST">
-                    <!-- First Line: Name and Email -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                        <input type="text" name="name" placeholder="Your Name"
-                            class="p-3 border border-gray-300 rounded-lg w-full" required>
-                        <input type="email" name="email" placeholder="Email Address"
-                            class="p-3 border border-gray-300 rounded-lg w-full" required>
-                    </div>
+                    <p class="text-gray-500 text-[12px] mb-4">Call us at <a href="tel:+916268645010" class="text-gray-600 hover:text-green-600 mb-1">+91 6268645010</a> during our business hours</p>
 
-                    <!-- Second Line: Phone and Category -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                        <input type="tel" name="phone" placeholder="Phone"
-                            class="p-3 border border-gray-300 rounded-lg w-full" required>
-                        <select name="category" class="p-3 border border-gray-300 rounded-lg w-full" required>
-                            <option value="">Select Category</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="support">Support</option>
-                            <option value="feedback">Feedback</option>
-                        </select>
-                    </div>
-
-                    <!-- Third Line: Message -->
-                    <div class="mb-6">
-                        <textarea name="message" rows="4" placeholder="Write a message"
-                            class="p-3 border border-gray-300 rounded-lg w-full" required></textarea>
-                    </div>
-
-                    <!-- Checkbox: Privacy Policy -->
-                    <div class="flex items-center mb-6">
-                        <input type="checkbox" name="privacy" class="mr-2" required>
-                        <label for="privacy" class="text-gray-600">You agree to our <span class="text-green-600">privacy
-                                policy</span></label>
-                    </div>
-
-                    <!-- Send Message Button -->
-                    <div>
-                        <button type="submit"
-                            class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md inline-flex items-center">
-                            Send Message
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                </form>
+               <!-- Contact Form -->
+<form action="https://formsubmit.co/Info@ambaokrishikutumb.com" method="POST" onsubmit="showSuccess(event)">
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
+  
+    <!-- First Line: Name and Email -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+      <input type="text" name="name" placeholder="Your Name"
+        class="p-3 border border-gray-300 rounded-lg w-full" required>
+      <input type="email" name="email" placeholder="Email Address"
+        class="p-3 border border-gray-300 rounded-lg w-full" required>
+    </div>
+  
+    <!-- Second Line: Phone and Category -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+      <input type="tel" name="phone" placeholder="Phone"
+        class="p-3 border border-gray-300 rounded-lg w-full" required>
+      <select name="category" class="p-3 border border-gray-300 rounded-lg w-full" required>
+        <option value="">Select Category</option>
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+      </select>
+    </div>
+  
+    <!-- Third Line: Message -->
+    <div class="mb-6">
+      <textarea name="message" rows="4" placeholder="Write a message"
+        class="p-3 border border-gray-300 rounded-lg w-full" required></textarea>
+    </div>
+  
+    <!-- Checkbox: Privacy Policy -->
+    <div class="flex items-center mb-6">
+      <input type="checkbox" name="privacy" class="mr-2" id="privacy" required>
+      <label for="privacy" class="text-gray-600">You agree to our <span class="text-green-600">privacy policy</span></label>
+    </div>
+  
+    <!-- Send Message Button -->
+    <div>
+      <button type="submit"
+        class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md inline-flex items-center">
+        Send Message
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </form>
+  
+  <!-- Success Message Script -->
+  <script>
+    function showSuccess(event) {
+      event.preventDefault();
+      const form = event.target;
+  
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form)
+      }).then(response => {
+        if (response.ok) {
+          const msg = document.createElement('div');
+          msg.textContent = "✅ Message sent successfully!";
+          msg.className = "text-green-600 font-semibold mt-4";
+          form.appendChild(msg);
+          setTimeout(() => {
+            msg.remove();
+            form.reset();
+          }, 3000);
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+      });
+  
+      return false;
+    }
+  </script>
+  
             </div>
 
             <!-- Contact Details, Office Location, and Email Cards -->
@@ -235,8 +276,9 @@
                     <i class="fa-solid fa-phone text-green-600 text-2xl"></i>
                     <div>
                         <h3 class="text-xl font-semibold text-black mb-2">Contact Details</h3>
-                        <p class="text-gray-600 mb-1">+91 9876543210</p>
-                        <p class="text-gray-600">+91 1234567890</p>
+                        <a href="tel:+916268645010" class="text-gray-600 hover:text-green-600 mb-1 block">+91 6268645010</a>
+
+                        
                     </div>
                 </div>
 
@@ -245,7 +287,8 @@
                     <i class="fa-solid fa-location-dot text-green-600 text-2xl"></i>
                     <div>
                         <h3 class="text-xl font-semibold text-black mb-2">Office Location</h3>
-                        <p class="text-gray-600">123, Anycity, Anywhere in the <br> world</p>
+                        <p class="text-gray-600">Timarni Harda, Madhya Pradesh, <br>India 
+                            461228</p>
                     </div>
                 </div>
 
@@ -255,9 +298,11 @@
                     <div>
                         <h3 class="text-xl font-semibold text-black mb-2">Email Us</h3>
                         <p class="text-gray-600">
-                            hello@reallygreatsite.com<br>
-                            goodbye@reallybadsite.com
-                        </p>
+                            <a href="mailto:Info@ambaokrishikutumb.com" class="hover:text-green-600">
+                              Info@ambaokrishikutumb.com
+                            </a>
+                          </p>
+                          
                     </div>
                 </div>
 
@@ -267,119 +312,120 @@
 
     <!-- Footer Section -->
     <footer>
-        <section style="background-color: #eaf0e7;"
-        class="py-12 px-6 md:px-20 lg:px-28 flex flex-wrap justify-between items-start gap-10 text-gray-800 text-sm">
-    
-        <!-- Left Brand Section -->
-        <div class="max-w-sm space-y-4">
+        <section style="background-color: #eaf0e7;" class="py-12 px-6 md:px-16 lg:px-20 flex flex-wrap justify-between items-start gap-x-8 gap-y-4 text-gray-800 text-sm">
+      
+          <!-- Brand Column -->
+          <div class="max-w-sm space-y-2">
             <h1 class="text-2xl font-semibold text-black">Krishi Kutumb</h1>
-            <p class="leading-relaxed text-[14px] text-gray-700">
-                K2: Your all-in-one farm solution<br>
-                connecting all your farming activities<br>
-                with a focus on organic and sustainable<br>
-                agriculture!
+            <p class="leading-relaxed text-sm text-gray-700">
+              K2: Your all-in-one farm solution<br>
+              connecting all your farming activities<br>
+              with a focus on organic and sustainable<br>
+              agriculture!
             </p>
-    
+      
             <!-- Social Icons -->
-            <div class="flex gap-3 pt-2 text-xl text-gray-600">
-                <a href="#" class="hover:text-blue-600 transition bg-white px-2.5 py-1 rounded-full">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#" class="hover:text-black transition bg-white px-2.5 py-1 rounded-full">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a href="#" class="hover:text-pink-500 transition bg-white px-2.5 py-1 rounded-full">
-                    <i class="fa-solid fa-camera-retro"></i>
-                </a>
+            <div class="flex gap-3 pt-2 text-lg text-gray-600">
+              <a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/" class="hover:text-blue-600 transition bg-white px-2.5 py-1 rounded-full">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-pink-600 transition bg-white px-2.5 py-1 rounded-full">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-red-500 transition bg-white px-2.5 py-1 rounded-full">
+                <i class="fab fa-youtube"></i>
+              </a>
             </div>
-        </div>
-    
-        <!-- Quick Links -->
-        <div class="space-y-2">
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="space-y-1">
             <h2 class="font-semibold mb-1 text-black">Quick Links</h2>
-            <ul class="space-y-[20px] text-[14px]">
-                <li><a href="#" class="hover:text-green-600 transition">Help</a></li>
-                <li><a href="#" class="hover:text-green-600 transition">Contact Us</a></li>
-                <li><a href="#" class="hover:text-green-600 transition">Lorem ipsum</a></li>
-                <li><a href="#" class="hover:text-green-600 transition">Lorem ipsum</a></li>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:text-green-600 transition">Help</a></li>
+              <li><a href="#" class="hover:text-green-600 transition">Contact Us</a></li>
+              <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
+              <li><a href="#" class="hover:text-green-600 transition">About us</a></li>
             </ul>
-        </div>
-    
-        <!-- Community -->
-        <div class="space-y-2">
+          </div>
+      
+          <!-- Community -->
+          <div class="space-y-1">
             <h2 class="font-semibold mb-1 text-black">Community</h2>
-            <ul class="space-y-[20px] text-[14px]">
-                <li><a href="#" class="hover:text-green-600 transition">Events</a></li>
-                <li><a href="#" class="hover:text-green-600 transition">Blog</a></li>
+            <ul class="space-y-1">
+              <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-green-600 transition">Videos</a></li>
+              <li><a href="#" class="hover:text-green-600 transition">Blog</a></li>
             </ul>
-        </div>
-    
-        <!-- Follow Us -->
-        <div class="space-y-2">
+          </div>
+      
+          <!-- Follow Us -->
+          <div class="space-y-1">
             <h2 class="font-semibold mb-1 text-black">Follow Us</h2>
-            <ul class="space-y-[20px] text-[14px]">
-                <li><a href="#" class="hover:text-green-600 transition">Instagram</a></li>
-                <li><a href="#" class="hover:text-green-600 transition">Facebook</a></li>
-                <li><a href="#" class="hover:text-green-600 transition">YouTube</a></li>
-                <li><a href="#" class="hover:text-green-600 transition">LinkedIn</a></li>
+            <ul class="space-y-1">
+              <li><a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-green-600 transition">Instagram</a></li>
+              <li><a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/" class="hover:text-green-600 transition">Facebook</a></li>
+              <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-green-600 transition">YouTube</a></li>
+              <li><a href="http://www.linkedin.com/in/ambao-krishi-kutumb-a701b0314" class="hover:text-green-600 transition">LinkedIn</a></li>
             </ul>
-        </div>
-    
-        <!-- Divider -->
-        <div class="w-full h-px bg-gray-300 mt-10 mb-4"></div>
-    
-        <!-- Bottom Footer -->
-        <div class="flex flex-col md:flex-row justify-between items-center w-full text-[13px] font-medium gap-4 text-gray-700">
+          </div>
+      
+          <!-- Divider -->
+          <div class="w-full h-px bg-gray-300 mt-6"></div>
+      
+          <!-- Bottom Footer -->
+          <div class="flex flex-col md:flex-row justify-between items-center w-full text-xs font-medium gap-3 text-gray-700 pt-4">
             <p>©2025 Krishi Kutumb. All rights reserved</p>
-            <div class="flex gap-6">
-                <a href="#" class="hover:underline">Privacy & Policy</a>
-                <a href="#" class="hover:underline">Terms & Conditions</a>
-            </div>
-        </div>
-    </section>
-    
-       </footer>
+            <div class="flex gap-4">
+                <a href="policy.html" class="hover:text-green-600 transition">Privacy & Policy</a>
+                <a href="Termsandcondition.html" class="hover:text-green-600 transition">Terms & Conditions</a></div>
+          </div>
+      
+        </section>
+      </footer>
+      
+      
+      
 
     <!-- JavaScript -->
     <script>
         // Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
+    
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            mobileMenuButton.querySelector('i').classList.toggle('fa-bars', !isOpen);
+            mobileMenuButton.querySelector('i').classList.toggle('fa-times', isOpen);
         });
-
+    
         // Mobile Dropdown Toggles
         const servicesDropdownButton = document.getElementById('services-dropdown-button');
         const servicesDropdown = document.getElementById('services-dropdown');
         const resourcesDropdownButton = document.getElementById('resources-dropdown-button');
         const resourcesDropdown = document.getElementById('resources-dropdown');
-
+    
         servicesDropdownButton.addEventListener('click', () => {
             servicesDropdown.classList.toggle('hidden');
-            servicesDropdownButton.querySelector('i').classList.toggle('fa-chevron-down');
-            servicesDropdownButton.querySelector('i').classList.toggle('fa-chevron-up');
+            const icon = servicesDropdownButton.querySelector('.faq-icon');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
         });
-
+    
         resourcesDropdownButton.addEventListener('click', () => {
             resourcesDropdown.classList.toggle('hidden');
-            resourcesDropdownButton.querySelector('i').classList.toggle('fa-chevron-down');
-            resourcesDropdownButton.querySelector('i').classList.toggle('fa-chevron-up');
+            const icon = resourcesDropdownButton.querySelector('.faq-icon');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
         });
-
-        // FAQ Toggles
-        const faqToggles = document.querySelectorAll('.faq-toggle');
-
-        faqToggles.forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                const content = toggle.nextElementSibling;
-                const icon = toggle.querySelector('.faq-icon');
-
-                content.classList.toggle('hidden');
-                icon.classList.toggle('fa-chevron-down');
-                icon.classList.toggle('fa-chevron-up');
-            });
+    
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.querySelector('i').classList.add('fa-bars');
+                mobileMenuButton.querySelector('i').classList.remove('fa-times');
+            }
         });
     </script>
 </body>
