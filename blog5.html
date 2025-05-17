@@ -2,129 +2,339 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Krishi Kutumb - Agricultural Solutions</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishi Kutumb - Agricultural Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-gray-50">
-    <!-- Navbar -->
-    <header class="bg-white shadow">
-      <nav class="fixed top-0 left-0 right-0 bg-white px-4 sm:px-6 py-4 flex items-center justify-between z-50">
-          <!-- Logo and Title -->
-          <div class="flex items-center gap-2 sm:gap-3">
-              <a href="index.html">
-                  <img src="images/K2_Krishi_Kutumb_.png" alt="Krishi Kutumb Logo" class="h-12 sm:h-24 w-auto object-contain" />
-              </a>
-              <h1 class="text-xl sm:text-2xl font-semibold text-black">
-                  <a href="index.html" class="hover:text-green-600 transition text-green-700 text-3xl">Krishi Kutumb</a>
-              </h1>
-          </div>
-  
-          <!-- Mobile Menu Button -->
-          <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
-              <i class="fas fa-bars text-2xl sm:text-3xl"></i>
-          </button>
-  
-          <!-- Desktop Navigation -->
-          <ul class="hidden md:flex space-x-4 lg:space-x-8 text-gray-700 font-medium items-center">
-              <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
-              
-              <!-- Services Dropdown -->
-              <li class="group relative">
-                  <a href="#" class="hover:text-green-600 transition flex items-center">
-                      Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                  </a>
-                  <ul class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a></li>
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <nav class="fixed top-0 left-0 right-0 bg-white px-4 sm:px-6 py-4 flex items-center justify-between z-50">
+      <!-- Logo and Title -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="index.html">
+          <img src="images/K2_Krishi_Kutumb_.png" alt="Krishi Kutumb Logo" class="h-12 sm:h-24 w-auto object-contain" />
+        </a>
+        <h1 class="text-xl sm:text-2xl font-semibold text-black">
+          <a href="index.html" class="hover:text-green-600 transition text-green-700 text-3xl">Krishi Kutumb</a>
+        </h1>
+      </div>
 
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
-           
-                  </ul>
-              </li>
-  
-              <!-- Resources Dropdown -->
-              <li class="group relative">
-                  <a href="#" class="hover:text-green-600 transition flex items-center">
-                      Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                  </a>
-                  <ul class="absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                      <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
-                      <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
-                  </ul>
-              </li>
-  
-              <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
-              <li><a href="#" class="hover:text-green-600 transition">About</a></li>
-              <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
+        <i class="fas fa-bars text-2xl sm:text-3xl"></i>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-4 lg:space-x-8 text-gray-700 font-medium items-center">
+        <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="group relative">
+          <a href="#" class="hover:text-green-600 transition flex items-center">
+            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </a>
+          <ul
+            class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a>
+        </li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a>
+        </li>
+
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a>
+        </li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
+
+      </ul>
+      </li>
+
+      <!-- Resources Dropdown -->
+      <li class="group relative">
+        <a href="#" class="hover:text-green-600 transition flex items-center">
+          Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
+        </a>
+        <ul
+          class="absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+          <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
+      <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+      <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+      </ul>
+
+      <!-- Get Started Button (Desktop) -->
+      <button
+        class="hidden md:block bg-green-700 text-white px-4 py-1.5 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+        <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto transition-all duration-300">
+      <ul class="px-4 py-4 space-y-3">
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Home</a></li>
+
+        <!-- Mobile Dropdown - Services -->
+        <li>
+          <button
+            class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base"
+            id="services-dropdown-button">
+            Services <i class="fas fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <ul id="services-dropdown" class="hidden pl-6 space-y-2 mt-2">
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician
+              </a></li>
+
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market /
+                Buy-sell</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
           </ul>
-  
-          <!-- Get Started Button (Desktop) -->
-          <button class="hidden md:block bg-green-700 text-white px-4 py-1.5 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+        </li>
+
+        <!-- Mobile Dropdown - Resources -->
+        <li>
+          <button
+            class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base"
+            id="resources-dropdown-button">
+            Resources <i class="fas fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <ul id="resources-dropdown" class="hidden pl-6 space-y-2 mt-2">
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Blog Articles</a>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Video Tutorials</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">FPO</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">About</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Contact</a></li>
+        <li>
+          <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition text-base">
             <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
           </button>
-      </nav>
-  
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto transition-all duration-300">
-          <ul class="px-4 py-4 space-y-3">
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Home</a></li>
-  
-              <!-- Mobile Dropdown - Services -->
-              <li>
-                  <button class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base" id="services-dropdown-button">
-                      Services <i class="fas fa-chevron-down faq-icon text-sm"></i>
-                  </button>
-                  <ul id="services-dropdown" class="hidden pl-6 space-y-2 mt-2">
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a></li>
-
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
-                  </ul>
-              </li>
-  
-              <!-- Mobile Dropdown - Resources -->
-              <li>
-                  <button class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base" id="resources-dropdown-button">
-                      Resources <i class="fas fa-chevron-down faq-icon text-sm"></i>
-                  </button>
-                  <ul id="resources-dropdown" class="hidden pl-6 space-y-2 mt-2">
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Blog Articles</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Video Tutorials</a></li>
-                  </ul>
-              </li>
-  
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">FPO</a></li>
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">About</a></li>
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Contact</a></li>
-              <li>
-                  <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition text-base">
-                    <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
-                  </button>
-              </li>
-          </ul>
-      </div>
+        </li>
+      </ul>
+    </div>
   </header>
 
 
+  <!-- Blog 5 -->
+  <div class="max-w-4xl mx-auto mt-10">
+    <!-- Title -->
+    <br><br><br><br><br>
+    <h1 class="text-2xl font-bold mb-6 text-center">How to Get the Best Price for Your Produce: A Farmer’s Guide</h1>
+
+    <!-- Image -->
+    <div class="mb-6">
+      <img src="images/blog5_pictures/blog5_1.png" alt="Farm produce money bag" class="rounded mx-auto w-1/2" />
+    </div>
+
+    <!-- Introduction -->
+    <p class="mb-6 text-lg">
+      In today’s dynamic agricultural landscape, growing high-quality crops is only half the battle—selling them at the
+      right price is equally critical.
+      For many farmers, the real challenge begins after harvest: how to find the best market and negotiate fair prices.
+      If you’re wondering how to
+      consistently get the best value for your hard-earned produce, this guide is for you.
+    </p>
+
+    <!-- Section 1 -->
+    <h2 class="text-xl font-semibold mb-4">1. Know Your Crop’s True Value</h2>
+    <p class="mb-4">
+      Before you hit the market, understand what your produce is worth:
+    </p>
+    <ul class="list-disc list-inside mb-4 space-y-1">
+      <li>Research current mandi rates daily using mobile apps or government portals.</li>
+      <li>Compare local, regional, and national prices for the same produce.</li>
+      <li>Evaluate quality factors such as size, grade, and freshness, which influence price.</li>
+    </ul>
+    <p>Pro Tip: Use agri-tech apps like Krishi Kutumb to monitor live market prices and
+      trends across regions.</p>
+  </div>
+
+  <div class="max-w-4xl mx-auto my-10 px-4">
+    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+
+      <!-- Text Content -->
+      <div class="md:w-2/3">
+        <h2 class="text-xl font-semibold mb-2">2. Timing is Everything</h2>
+        <p class="mb-3">
+          Market prices fluctuate based on seasonal supply and demand:
+        </p>
+        <ul class="list-disc list-inside mb-3 space-y-1">
+          <li>Avoid selling during peak harvest when markets are flooded.</li>
+          <li>Consider storage options to delay selling until prices rise.</li>
+          <li>Use weather forecasts and sowing calendars to plan off-season or early harvests for premium pricing.</li>
+        </ul>
+        <p class="italic text-gray-700">“Early to market, better the rate.” – A timeless farm market truth.</p>
+      </div>
+
+      <!-- Image -->
+      <div class="md:w-1/3">
+        <img src="images/blog5_pictures/blog5_2.png" alt="Hand in wheat field with graph"
+          class="rounded shadow w-full h-auto object-cover" />
+      </div>
+
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto my-10 px-4">
+    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+
+      <!-- Image on the left -->
+      <div class="md:w-1/3">
+        <img src="images/blog5_pictures/blog5_3.png" alt="Farmer using digital platform"
+          class="rounded shadow w-full h-auto object-cover" />
+      </div>
+
+      <!-- Text Content -->
+      <div class="md:w-2/3">
+        <h2 class="text-xl font-semibold mb-2">3. Explore Multiple Selling Channels</h2>
+        <p class="mb-3">
+          Don’t limit yourself to the local mandi. Today, farmers have many sales options:
+        </p>
+        <ul class="list-disc list-inside mb-3 space-y-1">
+          <li>Local Mandis (APMCs) – Traditional but often crowded.</li>
+          <li>Direct-to-Consumer – Sell via farm stands or community delivery.</li>
+          <li>Online Agri Marketplaces – Platforms like eNAM, Krishi Kutumb, DeHaat, and others.</li>
+          <li>Farmer Producer Organizations (FPOs) – Collective bargaining power and bulk selling advantages.</li>
+          <li>Contract Farming or Tie-ups with Retailers – Assured buyers and prices.</li>
+        </ul>
+        <p class="text-gray-700">
+          Diversifying sales channels reduces your dependence on one market<br />
+          and increases chances of higher prices.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="max-w-4xl mx-auto my-10 px-4 space-y-10">
+
+    <!-- Section 4: Focus on Quality & Branding -->
+    <div class="flex flex-col md:flex-row items-start gap-6">
+      <!-- Text Content -->
+      <div class="md:w-2/3">
+        <h2 class="text-xl font-semibold mb-2">4. Focus on Quality & Branding</h2>
+        <p class="mb-3">In a competitive market, quality stands out:</p>
+        <ul class="list-disc list-inside mb-3 space-y-1">
+          <li>Sort, grade, and package your produce professionally.</li>
+          <li>Add basic labeling: farm name, pesticide-free, organic (if applicable).</li>
+          <li>Build a reputation for consistent, quality produce—buyers pay more for reliability.</li>
+        </ul>
+        <p class="text-gray-700">Think like a brand. Even farm produce can earn a loyal buyer base with the right image.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="md:w-1/3">
+        <img src="images/blog5_pictures/blog5_4.png" alt="Quality branding on clipboard"
+          class="rounded shadow w-full h-auto object-cover" />
+      </div>
+    </div>
+
+    <!-- Section 5: Join Farmer Networks & Groups -->
+    <div class="flex flex-col md:flex-row items-start gap-6">
+      <!-- Image -->
+      <div class="md:w-1/3">
+        <img src="images/blog5_pictures/blog5_5.png" alt="Farmer using mobile network"
+          class="rounded shadow w-full h-auto object-cover" />
+      </div>
+
+      <!-- Text Content -->
+      <div class="md:w-2/3">
+        <h2 class="text-xl font-semibold mb-2">5. Join Farmer Networks & Groups</h2>
+        <p class="mb-3">Knowledge shared is profit earned:</p>
+        <ul class="list-disc list-inside mb-3 space-y-1">
+          <li>Be part of local WhatsApp groups, Krishi Kutumb communities, or FPOs.</li>
+          <li>Share mandi rates, buyer contacts, and bulk transport options.</li>
+          <li>Collaborate to negotiate better deals or bulk-sell directly to wholesalers.</li>
+        </ul>
+        <p class="text-gray-700">When farmers unite, middlemen lose power.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="max-w-4xl mx-auto px-4 my-10 space-y-10">
+
+    <!-- Section 6 and 7 -->
+    <div class="flex flex-col md:flex-row gap-8">
+      <!-- Text Content -->
+      <div class="md:w-2/3">
+        <h2 class="text-xl font-semibold mb-2">6. Negotiate Like a Pro</h2>
+        <p class="mb-3">
+          Yes, negotiation is an art—and farmers can master it:
+        </p>
+        <ul class="list-disc list-inside mb-6 space-y-1">
+          <li>Don’t rush to sell. Be ready to walk away if the price isn’t fair.</li>
+          <li>Know your break-even cost—never sell below it.</li>
+          <li>If possible, get multiple quotes before making a deal.</li>
+          <li>Keep receipts and buyer contacts for future reference.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mb-2">7. Stay Updated, Stay Ahead</h2>
+        <p class="mb-3">Markets evolve. Stay informed:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Follow agriculture news, government schemes, and subsidy updates.</li>
+          <li>Attend farmer expos or agri workshops to learn marketing trends.</li>
+          <li>Use apps like Krishi Kutumb to access curated, actionable updates.</li>
+        </ul>
+      </div>
+
+      <!-- Image -->
+      <div class="md:w-1/3 flex justify-end">
+        <img src="images/blog5_pictures/blog5_6.png" alt="Farmer showing tablet in field"
+          class="rounded-md w-64 h-40 object-cover" />
+      </div>
+
+
+    </div>
+
+    <!-- Conclusion -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-2">Conclusion: Empower Yourself to Earn More</h2>
+      <p class="mb-4">
+        You grow food that feeds the world—it’s time you earn what it’s worth. With smart planning, the right tools, and
+        a networked approach, you can take control of how and where you sell your produce. Getting the best price isn’t
+        luck—it’s strategy, awareness, and consistent effort.
+      </p>
+      <p>
+        Don’t settle for whatever price the market throws at you. Instead, set your own standards—understand your costs,
+        recognize your crop’s value, and demand what’s fair. You have more power than you think, especially when you’re
+        informed and connected.
+      </p>
+    </div>
+
+  </div>
+
 
   <footer>
-    <section style="background-color: #eaf0e7;" class="py-12 px-6 md:px-16 lg:px-20 flex flex-wrap justify-between items-start gap-x-8 gap-y-4 text-gray-800 text-sm">
-  
+    <section style="background-color: #eaf0e7;"
+      class="py-12 px-6 md:px-16 lg:px-20 flex flex-wrap justify-between items-start gap-x-8 gap-y-4 text-gray-800 text-sm">
+
       <!-- Brand Column -->
       <div class="max-w-sm space-y-2">
         <h1 class="text-2xl font-semibold text-black">Krishi Kutumb</h1>
@@ -134,21 +344,24 @@
           with a focus on organic and sustainable<br>
           agriculture!
         </p>
-  
+
         <!-- Social Icons -->
         <div class="flex gap-3 pt-2 text-lg text-gray-600">
-          <a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/" class="hover:text-blue-600 transition bg-white px-2.5 py-1 rounded-full">
+          <a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/"
+            class="hover:text-blue-600 transition bg-white px-2.5 py-1 rounded-full">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-pink-600 transition bg-white px-2.5 py-1 rounded-full">
+          <a href="https://www.instagram.com/k2.krishikutumb/"
+            class="hover:text-pink-600 transition bg-white px-2.5 py-1 rounded-full">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-red-500 transition bg-white px-2.5 py-1 rounded-full">
+          <a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ"
+            class="hover:text-red-500 transition bg-white px-2.5 py-1 rounded-full">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
       </div>
-  
+
       <!-- Quick Links -->
       <div class="space-y-1">
         <h2 class="font-semibold mb-1 text-black">Quick Links</h2>
@@ -159,56 +372,63 @@
           <li><a href="#" class="hover:text-green-600 transition">About us</a></li>
         </ul>
       </div>
-  
+
       <!-- Community -->
       <div class="space-y-1">
         <h2 class="font-semibold mb-1 text-black">Community</h2>
         <ul class="space-y-1">
-          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-green-600 transition">Videos</a></li>
+          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ"
+              class="hover:text-green-600 transition">Videos</a></li>
           <li><a href="#" class="hover:text-green-600 transition">Blog</a></li>
         </ul>
       </div>
-  
+
       <!-- Follow Us -->
       <div class="space-y-1">
         <h2 class="font-semibold mb-1 text-black">Follow Us</h2>
         <ul class="space-y-1">
-          <li><a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-green-600 transition">Instagram</a></li>
-          <li><a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/" class="hover:text-green-600 transition">Facebook</a></li>
-          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-green-600 transition">YouTube</a></li>
-          <li><a href="http://www.linkedin.com/in/ambao-krishi-kutumb-a701b0314" class="hover:text-green-600 transition">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-green-600 transition">Instagram</a>
+          </li>
+          <li><a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/"
+              class="hover:text-green-600 transition">Facebook</a></li>
+          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ"
+              class="hover:text-green-600 transition">YouTube</a></li>
+          <li><a href="http://www.linkedin.com/in/ambao-krishi-kutumb-a701b0314"
+              class="hover:text-green-600 transition">LinkedIn</a></li>
         </ul>
       </div>
-  
+
       <!-- Divider -->
       <div class="w-full h-px bg-gray-300 mt-6"></div>
-  
+
       <!-- Bottom Footer -->
-      <div class="flex flex-col md:flex-row justify-between items-center w-full text-xs font-medium gap-3 text-gray-700 pt-4">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-full text-xs font-medium gap-3 text-gray-700 pt-4">
         <p>©2025 Krishi Kutumb. All rights reserved</p>
         <div class="flex gap-4">
-          
+
           <a href="policy.html" class="hover:text-green-600 transition">Privacy & Policy</a>
-          <a href="Termsandcondition.html" class="hover:text-green-600 transition">Terms & Conditions</a> </div>
+          <a href="Termsandcondition.html" class="hover:text-green-600 transition">Terms & Conditions</a>
+        </div>
       </div>
-  
+
     </section>
   </footer>
-  
-  
-  
 
-<!-- JavaScript -->
-<script>
+
+
+
+  <!-- JavaScript -->
+  <script>
     // Mobile Menu Toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
     mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        const isOpen = !mobileMenu.classList.contains('hidden');
-        mobileMenuButton.querySelector('i').classList.toggle('fa-bars', !isOpen);
-        mobileMenuButton.querySelector('i').classList.toggle('fa-times', isOpen);
+      mobileMenu.classList.toggle('hidden');
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenuButton.querySelector('i').classList.toggle('fa-bars', !isOpen);
+      mobileMenuButton.querySelector('i').classList.toggle('fa-times', isOpen);
     });
 
     // Mobile Dropdown Toggles
@@ -218,28 +438,28 @@
     const resourcesDropdown = document.getElementById('resources-dropdown');
 
     servicesDropdownButton.addEventListener('click', () => {
-        servicesDropdown.classList.toggle('hidden');
-        const icon = servicesDropdownButton.querySelector('.faq-icon');
-        icon.classList.toggle('fa-chevron-down');
-        icon.classList.toggle('fa-chevron-up');
+      servicesDropdown.classList.toggle('hidden');
+      const icon = servicesDropdownButton.querySelector('.faq-icon');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
     });
 
     resourcesDropdownButton.addEventListener('click', () => {
-        resourcesDropdown.classList.toggle('hidden');
-        const icon = resourcesDropdownButton.querySelector('.faq-icon');
-        icon.classList.toggle('fa-chevron-down');
-        icon.classList.toggle('fa-chevron-up');
+      resourcesDropdown.classList.toggle('hidden');
+      const icon = resourcesDropdownButton.querySelector('.faq-icon');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
     });
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (event) => {
-        if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
-            mobileMenu.classList.add('hidden');
-            mobileMenuButton.querySelector('i').classList.add('fa-bars');
-            mobileMenuButton.querySelector('i').classList.remove('fa-times');
-        }
+      if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+        mobileMenuButton.querySelector('i').classList.add('fa-bars');
+        mobileMenuButton.querySelector('i').classList.remove('fa-times');
+      }
     });
-</script>
+  </script>
 </body>
 
 </html>

@@ -2,129 +2,263 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Krishi Kutumb - Agricultural Solutions</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishi Kutumb - Agricultural Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-gray-50">
-    <!-- Navbar -->
-    <header class="bg-white shadow">
-      <nav class="fixed top-0 left-0 right-0 bg-white px-4 sm:px-6 py-4 flex items-center justify-between z-50">
-          <!-- Logo and Title -->
-          <div class="flex items-center gap-2 sm:gap-3">
-              <a href="index.html">
-                  <img src="images/K2_Krishi_Kutumb_.png" alt="Krishi Kutumb Logo" class="h-12 sm:h-24 w-auto object-contain" />
-              </a>
-              <h1 class="text-xl sm:text-2xl font-semibold text-black">
-                  <a href="index.html" class="hover:text-green-600 transition text-green-700 text-3xl">Krishi Kutumb</a>
-              </h1>
-          </div>
-  
-          <!-- Mobile Menu Button -->
-          <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
-              <i class="fas fa-bars text-2xl sm:text-3xl"></i>
-          </button>
-  
-          <!-- Desktop Navigation -->
-          <ul class="hidden md:flex space-x-4 lg:space-x-8 text-gray-700 font-medium items-center">
-              <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
-              
-              <!-- Services Dropdown -->
-              <li class="group relative">
-                  <a href="#" class="hover:text-green-600 transition flex items-center">
-                      Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                  </a>
-                  <ul class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a></li>
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <nav class="fixed top-0 left-0 right-0 bg-white px-4 sm:px-6 py-4 flex items-center justify-between z-50">
+      <!-- Logo and Title -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="index.html">
+          <img src="images/K2_Krishi_Kutumb_.png" alt="Krishi Kutumb Logo" class="h-12 sm:h-24 w-auto object-contain" />
+        </a>
+        <h1 class="text-xl sm:text-2xl font-semibold text-black">
+          <a href="index.html" class="hover:text-green-600 transition text-green-700 text-3xl">Krishi Kutumb</a>
+        </h1>
+      </div>
 
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
-           
-                  </ul>
-              </li>
-  
-              <!-- Resources Dropdown -->
-              <li class="group relative">
-                  <a href="#" class="hover:text-green-600 transition flex items-center">
-                      Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                  </a>
-                  <ul class="absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                      <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
-                      <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
-                  </ul>
-              </li>
-  
-              <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
-              <li><a href="#" class="hover:text-green-600 transition">About</a></li>
-              <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
+        <i class="fas fa-bars text-2xl sm:text-3xl"></i>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-4 lg:space-x-8 text-gray-700 font-medium items-center">
+        <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="group relative">
+          <a href="#" class="hover:text-green-600 transition flex items-center">
+            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </a>
+          <ul
+            class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a>
+        </li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a>
+        </li>
+
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a>
+        </li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
+
+      </ul>
+      </li>
+
+      <!-- Resources Dropdown -->
+      <li class="group relative">
+        <a href="#" class="hover:text-green-600 transition flex items-center">
+          Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
+        </a>
+        <ul
+          class="absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+          <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
+      <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+      <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+      </ul>
+
+      <!-- Get Started Button (Desktop) -->
+      <button
+        class="hidden md:block bg-green-700 text-white px-4 py-1.5 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+        <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto transition-all duration-300">
+      <ul class="px-4 py-4 space-y-3">
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Home</a></li>
+
+        <!-- Mobile Dropdown - Services -->
+        <li>
+          <button
+            class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base"
+            id="services-dropdown-button">
+            Services <i class="fas fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <ul id="services-dropdown" class="hidden pl-6 space-y-2 mt-2">
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician
+              </a></li>
+
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market /
+                Buy-sell</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
           </ul>
-  
-          <!-- Get Started Button (Desktop) -->
-          <button class="hidden md:block bg-green-700 text-white px-4 py-1.5 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+        </li>
+
+        <!-- Mobile Dropdown - Resources -->
+        <li>
+          <button
+            class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base"
+            id="resources-dropdown-button">
+            Resources <i class="fas fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <ul id="resources-dropdown" class="hidden pl-6 space-y-2 mt-2">
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Blog Articles</a>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Video Tutorials</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">FPO</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">About</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Contact</a></li>
+        <li>
+          <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition text-base">
             <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
           </button>
-      </nav>
-  
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto transition-all duration-300">
-          <ul class="px-4 py-4 space-y-3">
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Home</a></li>
-  
-              <!-- Mobile Dropdown - Services -->
-              <li>
-                  <button class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base" id="services-dropdown-button">
-                      Services <i class="fas fa-chevron-down faq-icon text-sm"></i>
-                  </button>
-                  <ul id="services-dropdown" class="hidden pl-6 space-y-2 mt-2">
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a></li>
-
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
-                  </ul>
-              </li>
-  
-              <!-- Mobile Dropdown - Resources -->
-              <li>
-                  <button class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base" id="resources-dropdown-button">
-                      Resources <i class="fas fa-chevron-down faq-icon text-sm"></i>
-                  </button>
-                  <ul id="resources-dropdown" class="hidden pl-6 space-y-2 mt-2">
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Blog Articles</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Video Tutorials</a></li>
-                  </ul>
-              </li>
-  
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">FPO</a></li>
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">About</a></li>
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Contact</a></li>
-              <li>
-                  <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition text-base">
-                    <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
-                  </button>
-              </li>
-          </ul>
-      </div>
+        </li>
+      </ul>
+    </div>
   </header>
 
 
+  <!-- Blog 6 -->
+  <section class="max-w-4xl mx-auto px-4 py-20 space-y-8 mt-10">
+    <br>
+    <h1 class="text-2xl md:text-3xl font-bold text-center">
+      Ways to Protect Your Farm from Extreme<br class="hidden sm:inline"> Weather Conditions
+    </h1>
+
+    <img src="images/blog6_pictures/blog6_1.png" alt="Stormy farm landscape"
+      class="w-full max-h-80 object-cover rounded shadow-md">
+
+    <p class="text-base leading-relaxed text-justify">
+      Climate change is no longer a distant concern—it’s a present-day reality for farmers. From unseasonal rains and
+      rising temperatures to floods and prolonged droughts, extreme weather events are directly impacting agricultural
+      productivity and rural livelihoods. To survive and thrive in these challenging times, farmers must adopt
+      strategies that make their farms more weather-resilient. Below are some essential approaches every farmer should
+      consider.
+    </p>
+  </section>
+
+<section class="max-w-4xl mx-auto px-4 py-12 space-y-16">
+  <!-- Section 1 -->
+  <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+    <!-- Text -->
+    <div class="md:w-2/3">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Monitoring Weather Conditions in Real Time</h2>
+      <p class="text-gray-700">
+        In today’s digital era, staying informed about changing weather is both possible and practical. Real-time weather monitoring allows farmers to take timely action before disaster strikes. With the help of mobile apps, automated weather stations, and government advisories, it’s now easier than ever to get location-specific updates on temperature, rainfall, humidity, and storms. When you’re alerted early about a potential hailstorm or heavy rainfall, you can prepare your fields, protect equipment, and move livestock to safety—minimizing losses and disruptions to your operations.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/3">
+      <img src="images/blog6_pictures/blog6_2.png" alt="Weather monitoring on tablet" class="w-full rounded shadow-md object-cover max-h-60 md:max-h-72">
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+    <!-- Text -->
+    <div class="md:w-full">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Choosing the Right Crops and Varieties</h2>
+      <p class="text-gray-700">
+        In today’s digital era, staying informed about changing weather is both possible and practical. Real-time weather monitoring allows farmers to take timely action before disaster strikes. With the help of mobile apps, automated weather stations, and government advisories, it’s now easier than ever to get location-specific updates on temperature, rainfall, humidity, and storms. When you’re alerted early about a potential hailstorm or heavy rainfall, you can prepare your fields, protect equipment, and move livestock to safety—minimizing losses and disruptions to your operations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-4xl mx-auto px-4 py-12 space-y-16">
+  <!-- Section: Creating Natural Barriers -->
+  <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+    <!-- Image -->
+    <div class="md:w-1/3">
+      <img src="images/blog6_pictures/blog6_3.png" alt="Natural wind barrier" class="w-full rounded shadow-md object-cover max-h-60 md:max-h-72">
+    </div>
+    <!-- Text -->
+    <div class="md:w-2/3">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Creating Natural Barriers and Wind Protection</h2>
+      <p class="text-gray-700">
+        Strong winds, dust storms, and cyclonic activity can wreak havoc on farms, destroying crops and eroding topsoil. Establishing natural barriers like windbreaks and shelterbelts along the borders of your farm can provide much-needed protection. Rows of trees, such as neem or bamboo, help reduce wind velocity, limit soil loss, and protect delicate plants from physical damage. These green buffers also contribute to biodiversity and serve as shade sources for livestock.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section: Strengthening Farm Infrastructure -->
+  <div class="md:w-full">
+    <h2 class="text-xl md:text-2xl font-semibold mb-4">Strengthening Farm Infrastructure</h2>
+    <p class="text-gray-700">
+      Having the right infrastructure in place can make all the difference during extreme weather. For instance, raised beds help prevent waterlogging in heavy rains, while mulched soil retains moisture during dry spells. Using polyhouses or shade nets can protect high-value crops from intense sunlight and hail. Livestock shelters should be designed with proper ventilation for summer and insulation for winter to avoid heat stress or cold-related illnesses. These improvements don’t just protect during a crisis—they enhance long-term productivity.
+    </p>
+  </div>
+</section>
+
+<section class="max-w-4xl mx-auto px-4 py-12">
+  <div class="flex flex-col md:flex-row items-start gap-6">
+    <!-- Text Content -->
+    <div class="md:w-2/3">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Efficient Water Management Practices</h2>
+      <p class="text-gray-700">
+        Water is both a critical asset and a potential threat to farming. During droughts, scarcity affects plant growth, while floods can drown entire fields. That’s why efficient water management is essential. Farm ponds and check dams help store excess rainwater, which can be used during dry spells. Drip irrigation systems ensure that every drop reaches the root zone, conserving water and increasing efficiency. Meanwhile, building proper drainage systems around fields ensures that excess water flows out quickly, preventing root rot and soil erosion.
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="md:w-1/3">
+      <img src="images/blog6_pictures/blog6_4.png" alt="Irrigation system in farm field" class="w-full h-auto rounded shadow-md object-cover max-h-60 md:max-h-64">
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-4xl mx-auto px-4 py-12 space-y-10 text-gray-800">
+  <!-- Soil Health Section -->
+  <div>
+    <h2 class="text-xl md:text-2xl font-semibold mb-3">Improving Soil Health and Resilience</h2>
+    <p>
+      Healthy soil is your farm’s hidden defense against extreme weather. Soils rich in organic matter absorb more water during rains and hold moisture better during droughts. Regular soil testing helps you understand the current condition of your land so you can apply the right amendments, such as compost, gypsum, or lime. Practices like crop rotation, cover cropping, and mulching not only improve fertility but also make soil more resilient to temperature fluctuations and heavy rain.
+    </p>
+  </div>
+
+  <!-- Connected and Informed Section -->
+  <div>
+    <h2 class="text-xl md:text-2xl font-semibold mb-3">Staying Connected and Informed</h2>
+    <p>
+      No farmer should face climate risks alone. Joining local farming groups, digital platforms, or cooperatives ensures that you’re not only aware of upcoming weather threats but also connected to advice, assistance, and best practices. Mobile apps like Krishi Kutumb empower farmers with weather alerts, expert insights, community discussions, and access to reliable farm inputs. When farmers share their experiences and solutions, the entire community becomes stronger and more adaptive.
+    </p>
+  </div>
+
+  <!-- Conclusion -->
+  <div>
+    <h2 class="text-xl md:text-2xl font-semibold mb-3">Conclusion</h2>
+    <p>
+      Extreme weather is becoming more frequent and intense, but it doesn’t have to define the future of farming. By combining traditional wisdom with modern science—staying informed, investing in infrastructure, choosing the right crops, and working together—farmers can build stronger, more resilient farms that can withstand the unpredictability of climate change. The road ahead requires preparation and adaptability, but with the right steps, farmers can not only survive but thrive.
+    </p>
+  </div>
+</section>
+
 
   <footer>
-    <section style="background-color: #eaf0e7;" class="py-12 px-6 md:px-16 lg:px-20 flex flex-wrap justify-between items-start gap-x-8 gap-y-4 text-gray-800 text-sm">
-  
+    <section style="background-color: #eaf0e7;"
+      class="py-12 px-6 md:px-16 lg:px-20 flex flex-wrap justify-between items-start gap-x-8 gap-y-4 text-gray-800 text-sm">
+
       <!-- Brand Column -->
       <div class="max-w-sm space-y-2">
         <h1 class="text-2xl font-semibold text-black">Krishi Kutumb</h1>
@@ -134,21 +268,24 @@
           with a focus on organic and sustainable<br>
           agriculture!
         </p>
-  
+
         <!-- Social Icons -->
         <div class="flex gap-3 pt-2 text-lg text-gray-600">
-          <a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/" class="hover:text-blue-600 transition bg-white px-2.5 py-1 rounded-full">
+          <a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/"
+            class="hover:text-blue-600 transition bg-white px-2.5 py-1 rounded-full">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-pink-600 transition bg-white px-2.5 py-1 rounded-full">
+          <a href="https://www.instagram.com/k2.krishikutumb/"
+            class="hover:text-pink-600 transition bg-white px-2.5 py-1 rounded-full">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-red-500 transition bg-white px-2.5 py-1 rounded-full">
+          <a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ"
+            class="hover:text-red-500 transition bg-white px-2.5 py-1 rounded-full">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
       </div>
-  
+
       <!-- Quick Links -->
       <div class="space-y-1">
         <h2 class="font-semibold mb-1 text-black">Quick Links</h2>
@@ -159,56 +296,63 @@
           <li><a href="#" class="hover:text-green-600 transition">About us</a></li>
         </ul>
       </div>
-  
+
       <!-- Community -->
       <div class="space-y-1">
         <h2 class="font-semibold mb-1 text-black">Community</h2>
         <ul class="space-y-1">
-          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-green-600 transition">Videos</a></li>
+          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ"
+              class="hover:text-green-600 transition">Videos</a></li>
           <li><a href="#" class="hover:text-green-600 transition">Blog</a></li>
         </ul>
       </div>
-  
+
       <!-- Follow Us -->
       <div class="space-y-1">
         <h2 class="font-semibold mb-1 text-black">Follow Us</h2>
         <ul class="space-y-1">
-          <li><a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-green-600 transition">Instagram</a></li>
-          <li><a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/" class="hover:text-green-600 transition">Facebook</a></li>
-          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-green-600 transition">YouTube</a></li>
-          <li><a href="http://www.linkedin.com/in/ambao-krishi-kutumb-a701b0314" class="hover:text-green-600 transition">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-green-600 transition">Instagram</a>
+          </li>
+          <li><a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/"
+              class="hover:text-green-600 transition">Facebook</a></li>
+          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ"
+              class="hover:text-green-600 transition">YouTube</a></li>
+          <li><a href="http://www.linkedin.com/in/ambao-krishi-kutumb-a701b0314"
+              class="hover:text-green-600 transition">LinkedIn</a></li>
         </ul>
       </div>
-  
+
       <!-- Divider -->
       <div class="w-full h-px bg-gray-300 mt-6"></div>
-  
+
       <!-- Bottom Footer -->
-      <div class="flex flex-col md:flex-row justify-between items-center w-full text-xs font-medium gap-3 text-gray-700 pt-4">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-full text-xs font-medium gap-3 text-gray-700 pt-4">
         <p>©2025 Krishi Kutumb. All rights reserved</p>
         <div class="flex gap-4">
-          
+
           <a href="policy.html" class="hover:text-green-600 transition">Privacy & Policy</a>
-          <a href="Termsandcondition.html" class="hover:text-green-600 transition">Terms & Conditions</a> </div>
+          <a href="Termsandcondition.html" class="hover:text-green-600 transition">Terms & Conditions</a>
+        </div>
       </div>
-  
+
     </section>
   </footer>
-  
-  
-  
 
-<!-- JavaScript -->
-<script>
+
+
+
+  <!-- JavaScript -->
+  <script>
     // Mobile Menu Toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
     mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        const isOpen = !mobileMenu.classList.contains('hidden');
-        mobileMenuButton.querySelector('i').classList.toggle('fa-bars', !isOpen);
-        mobileMenuButton.querySelector('i').classList.toggle('fa-times', isOpen);
+      mobileMenu.classList.toggle('hidden');
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenuButton.querySelector('i').classList.toggle('fa-bars', !isOpen);
+      mobileMenuButton.querySelector('i').classList.toggle('fa-times', isOpen);
     });
 
     // Mobile Dropdown Toggles
@@ -218,28 +362,28 @@
     const resourcesDropdown = document.getElementById('resources-dropdown');
 
     servicesDropdownButton.addEventListener('click', () => {
-        servicesDropdown.classList.toggle('hidden');
-        const icon = servicesDropdownButton.querySelector('.faq-icon');
-        icon.classList.toggle('fa-chevron-down');
-        icon.classList.toggle('fa-chevron-up');
+      servicesDropdown.classList.toggle('hidden');
+      const icon = servicesDropdownButton.querySelector('.faq-icon');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
     });
 
     resourcesDropdownButton.addEventListener('click', () => {
-        resourcesDropdown.classList.toggle('hidden');
-        const icon = resourcesDropdownButton.querySelector('.faq-icon');
-        icon.classList.toggle('fa-chevron-down');
-        icon.classList.toggle('fa-chevron-up');
+      resourcesDropdown.classList.toggle('hidden');
+      const icon = resourcesDropdownButton.querySelector('.faq-icon');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
     });
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (event) => {
-        if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
-            mobileMenu.classList.add('hidden');
-            mobileMenuButton.querySelector('i').classList.add('fa-bars');
-            mobileMenuButton.querySelector('i').classList.remove('fa-times');
-        }
+      if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+        mobileMenuButton.querySelector('i').classList.add('fa-bars');
+        mobileMenuButton.querySelector('i').classList.remove('fa-times');
+      }
     });
-</script>
+  </script>
 </body>
 
 </html>

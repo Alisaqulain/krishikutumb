@@ -2,129 +2,352 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Krishi Kutumb - Agricultural Solutions</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishi Kutumb - Agricultural Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-gray-50">
-    <!-- Navbar -->
-    <header class="bg-white shadow">
-      <nav class="fixed top-0 left-0 right-0 bg-white px-4 sm:px-6 py-4 flex items-center justify-between z-50">
-          <!-- Logo and Title -->
-          <div class="flex items-center gap-2 sm:gap-3">
-              <a href="index.html">
-                  <img src="images/K2_Krishi_Kutumb_.png" alt="Krishi Kutumb Logo" class="h-12 sm:h-24 w-auto object-contain" />
-              </a>
-              <h1 class="text-xl sm:text-2xl font-semibold text-black">
-                  <a href="index.html" class="hover:text-green-600 transition text-green-700 text-3xl">Krishi Kutumb</a>
-              </h1>
-          </div>
-  
-          <!-- Mobile Menu Button -->
-          <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
-              <i class="fas fa-bars text-2xl sm:text-3xl"></i>
-          </button>
-  
-          <!-- Desktop Navigation -->
-          <ul class="hidden md:flex space-x-4 lg:space-x-8 text-gray-700 font-medium items-center">
-              <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
-              
-              <!-- Services Dropdown -->
-              <li class="group relative">
-                  <a href="#" class="hover:text-green-600 transition flex items-center">
-                      Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                  </a>
-                  <ul class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a></li>
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <nav class="fixed top-0 left-0 right-0 bg-white px-4 sm:px-6 py-4 flex items-center justify-between z-50">
+      <!-- Logo and Title -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="index.html">
+          <img src="images/K2_Krishi_Kutumb_.png" alt="Krishi Kutumb Logo" class="h-12 sm:h-24 w-auto object-contain" />
+        </a>
+        <h1 class="text-xl sm:text-2xl font-semibold text-black">
+          <a href="index.html" class="hover:text-green-600 transition text-green-700 text-3xl">Krishi Kutumb</a>
+        </h1>
+      </div>
 
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
-           
-                  </ul>
-              </li>
-  
-              <!-- Resources Dropdown -->
-              <li class="group relative">
-                  <a href="#" class="hover:text-green-600 transition flex items-center">
-                      Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                  </a>
-                  <ul class="absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
-                      <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
-                      <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
-                  </ul>
-              </li>
-  
-              <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
-              <li><a href="#" class="hover:text-green-600 transition">About</a></li>
-              <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
+        <i class="fas fa-bars text-2xl sm:text-3xl"></i>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-4 lg:space-x-8 text-gray-700 font-medium items-center">
+        <li><a href="#" class="hover:text-green-600 transition">Home</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="group relative">
+          <a href="#" class="hover:text-green-600 transition flex items-center">
+            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </a>
+          <ul
+            class="absolute left-0 mt-2 w-40 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a>
+        </li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a>
+        </li>
+
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a>
+        </li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
+
+      </ul>
+      </li>
+
+      <!-- Resources Dropdown -->
+      <li class="group relative">
+        <a href="#" class="hover:text-green-600 transition flex items-center">
+          Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
+        </a>
+        <ul
+          class="absolute left-0 mt-2 w-44 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-10">
+          <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Blog Articles</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-green-100">Video Tutorials</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="hover:text-green-600 transition">FPO</a></li>
+      <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+      <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+      </ul>
+
+      <!-- Get Started Button (Desktop) -->
+      <button
+        class="hidden md:block bg-green-700 text-white px-4 py-1.5 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+        <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto transition-all duration-300">
+      <ul class="px-4 py-4 space-y-3">
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Home</a></li>
+
+        <!-- Mobile Dropdown - Services -->
+        <li>
+          <button
+            class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base"
+            id="services-dropdown-button">
+            Services <i class="fas fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <ul id="services-dropdown" class="hidden pl-6 space-y-2 mt-2">
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician
+              </a></li>
+
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market /
+                Buy-sell</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
           </ul>
-  
-          <!-- Get Started Button (Desktop) -->
-          <button class="hidden md:block bg-green-700 text-white px-4 py-1.5 rounded-xl hover:bg-green-800 transition whitespace-nowrap">
+        </li>
+
+        <!-- Mobile Dropdown - Resources -->
+        <li>
+          <button
+            class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base"
+            id="resources-dropdown-button">
+            Resources <i class="fas fa-chevron-down faq-icon text-sm"></i>
+          </button>
+          <ul id="resources-dropdown" class="hidden pl-6 space-y-2 mt-2">
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Blog Articles</a>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Video Tutorials</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">FPO</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">About</a></li>
+        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Contact</a></li>
+        <li>
+          <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition text-base">
             <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
           </button>
-      </nav>
-  
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40 max-h-[calc(100vh-4rem)] overflow-y-auto transition-all duration-300">
-          <ul class="px-4 py-4 space-y-3">
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Home</a></li>
-  
-              <!-- Mobile Dropdown - Services -->
-              <li>
-                  <button class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base" id="services-dropdown-button">
-                      Services <i class="fas fa-chevron-down faq-icon text-sm"></i>
-                  </button>
-                  <ul id="services-dropdown" class="hidden pl-6 space-y-2 mt-2">
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">farmer</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Worker/Technician </a></li>
-
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Machine rental</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm"> Market / Buy-sell</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Farm Science</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">FPO</a></li>
-                  </ul>
-              </li>
-  
-              <!-- Mobile Dropdown - Resources -->
-              <li>
-                  <button class="w-full text-left px-4 py-2 flex justify-between items-center text-gray-700 hover:bg-green-100 rounded text-base" id="resources-dropdown-button">
-                      Resources <i class="fas fa-chevron-down faq-icon text-sm"></i>
-                  </button>
-                  <ul id="resources-dropdown" class="hidden pl-6 space-y-2 mt-2">
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Blog Articles</a></li>
-                      <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-sm">Video Tutorials</a></li>
-                  </ul>
-              </li>
-  
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">FPO</a></li>
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">About</a></li>
-              <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded text-base">Contact</a></li>
-              <li>
-                  <button class="w-full bg-green-700 text-white px-4 py-2 rounded-xl hover:bg-green-800 transition text-base">
-                    <a href="https://play.google.com/store/apps/details?id=com.ambaokrishikutumb.k2k&pli=1"> Get Started</a>
-                  </button>
-              </li>
-          </ul>
-      </div>
+        </li>
+      </ul>
+    </div>
   </header>
 
 
 
-  <footer>
-    <section style="background-color: #eaf0e7;" class="py-12 px-6 md:px-16 lg:px-20 flex flex-wrap justify-between items-start gap-x-8 gap-y-4 text-gray-800 text-sm">
-  
+  <!-- Blog 2 -->
+
+  <div class="max-w-4xl mx-auto px-6 py-10 text-gray-800 mt-28">
+    <h1 class="text-2xl font-bold text-center text-black mb-2">
+      How FPO’S Are Transforming Farming With K2 App
+    </h1>
+
+  </div>
+  <div class="max-w-4xl mx-auto px-6 py-10 text-gray-800">
+    <h1 class="text-2xl font-bold text-center text-black mb-2">
+      How FPO’S Are Transforming Farming With K2 App
+    </h1>
+    <p class="text-center text-lg text-gray-600 mb-6">
+      Reimagining Everyday Farming for Smarter Collaboration
+    </p>
+
+    <div class="flex justify-center mb-6">
+      <img src="images/blog2_pictures/blog2_1.png" alt="FPOs and Digital Farming"
+        class="rounded shadow-md w-full max-w-lg">
+    </div>
+
+    <h2 class="text-lg font-semibold text-black mb-2">
+      Farming Together: The New Digital Era
+    </h2>
+
+    <p class="text-gray-700 leading-relaxed">
+      Across India, Farmer Producer Organizations (FPOs) are changing the game. By combining traditional wisdom with
+      modern technology, they’re creating stronger, more resilient farming communities.
+      And at the heart of this transformation is the K2 App—a digital solution designed to streamline every task, big or
+      small. From inventory and finance to service sharing and smart scheduling, K2 is helping FPOs farm
+      better—together.
+    </p>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-6 py-10 text-gray-800 grid md:grid-cols-2 gap-10 items-center">
+    <!-- Text Section -->
+    <div>
+      <h2 class="text-xl font-semibold text-black mb-2">
+        One Farmer, Many Roles: Switch Profiles Seamlessly
+      </h2>
+      <p class="mb-2">
+        Farming today is dynamic. A single person might be an:
+      </p>
+      <ul class="list-disc list-inside mb-3 text-gray-700">
+        <li>FPO member</li>
+        <li>Individual farmer</li>
+        <li>Local service provider</li>
+      </ul>
+      <p class="mb-6">
+        With K2’s Multi-Profile Login, users can easily switch between roles without logging out. This means faster
+        workflows and smoother operations, whether you’re managing group crops, booking a tractor, or offering services
+        to others.
+      </p>
+
+
+    </div>
+
+    <!-- Image Section -->
+    <div class="flex justify-center ">
+      <div class="relative w-[500px] h-[500px] mx-auto ">
+        <!-- Phone Frame Image -->
+        <img src="images/blog2_pictures/blog2_phone.png" alt="Phone Frame"
+          class="absolute inset-0 w-full h-full z-10 pointer-events-none" />
+
+        <!-- Your Image Inside the Frame -->
+        <img src="images/blog2_pictures/blog2_2.jpg" alt="K2 App Mobile Interface"
+          class="absolute top-[65px] left-[112px] w-[165px] h-[370px] object-cover z-0 rounded-lg" />
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <!-- First Section -->
+    <div class="mb-10">
+      <h2 class="font-bold text-lg mb-2">“My Business” – Total Visibility into Group Inventory</h2>
+      <p>
+        FPOs need clear visibility of what they have and who contributed what. K2’s My Business feature provides:
+      </p>
+      <ul class="list-disc list-inside mb-2">
+        <li>Bulk stock entries for group assets like seeds, fertilizer, and harvests</li>
+        <li>Detailed tracking of farmer-wise contributions</li>
+        <li>Instant overviews of item types, quantities, and storage locations</li>
+      </ul>
+      <p>No more spreadsheets. Just smart, transparent tracking for the entire group.</p>
+    </div>
+
+    <!-- Second Section -->
+    <div class="flex items-start space-x-6">
+      <!-- Phone Image -->
+      <div class="relative w-[500px] h-[500px] mx-auto">
+        <!-- Phone Frame Image -->
+        <img src="images/blog2_pictures/blog2_phone.png" alt="Phone Frame"
+          class="absolute inset-0 w-full h-full z-10 pointer-events-none" />
+
+        <!-- Your Image Inside the Frame -->
+        <img src="images/blog2_pictures/blog2_3.jpg" alt="My Services Phone"
+          class="absolute top-[65px] left-[112px] w-[145px] h-[370px] object-cover z-0 rounded-lg" />
+      </div>
+
+
+      <!-- Text Content -->
+      <div>
+        <h2 class="font-bold text-lg mb-2">“My Services” – Smarter Use of Shared Tools</h2>
+        <p class="mb-2">
+          Farm equipment is expensive. That’s why sharing is key—and My Services makes it simple.
+        </p>
+        <ul class="list-disc list-inside mb-2">
+          <li>Browse a live list of available tools and tractors</li>
+          <li>Check real-time provider availability</li>
+          <li>Use the weekly color-coded calendar to plan and book with confidence</li>
+        </ul>
+        <p>
+          Better scheduling leads to better productivity, with fewer overlaps and wait times.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="max-w-4xl mx-auto px-6 py-10 text-gray-800 grid md:grid-cols-2 gap-10 items-center">
+    <!-- Text Section -->
+    <div>
+      <h2 class="text-xl font-semibold text-black mb-2">
+        “My Finance” – Crystal Clear Group Expenses
+      </h2>
+      <p class="mb-2">
+        With My Finance, FPOs can take control of their economics like never before.
+      </p>
+      <ul class="list-disc list-inside mb-3 text-gray-700">
+        <li> Estimate per-acre costs ahead of planting</li>
+        <li> Track actual vs expected expenses to stay on budget</li>
+        <li> Monitor expenses by member, unit, or crop type</li>
+      </ul>
+      <p class="mb-6">
+        This makes it easier to spot problems early and ensure transparency for all
+        members.
+      </p>
+
+      <h2 class="text-xl font-semibold text-black mb-2">
+        Admin Power Tools – Run the FPO with Confidence
+      </h2>
+      <p class="mb-2">
+        FPO leaders get a dedicated dashboard to manage operations effortlessly
+      </p>
+      <ul class="list-disc list-inside text-gray-700 mb-3">
+        <li> Add and manage members or farmer units</li>
+        <li> Monitor overall performance with automated reports</li>
+        <li>Access real-time data for smarter planning</li>
+      </ul>
+      <p> Whether you're scaling operations or solving daily challenges, these tools put you in
+        command.</p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="flex justify-center ">
+      <div class="relative w-[500px] h-[500px] mx-auto ">
+        <!-- Phone Frame Image -->
+        <img src="images/blog2_pictures/blog2_phone.png" alt="Phone Frame"
+          class="absolute inset-0 w-full h-full z-10 pointer-events-none" />
+
+        <!-- Your Image Inside the Frame -->
+        <img src="images/blog2_pictures/blog2_4.jpg" alt="K2 App Mobile Interface"
+          class="absolute top-[65px] left-[112px] w-[165px] h-[370px] object-cover z-0 rounded-lg" />
+      </div>
+    </div>
+
+  </div>
+
+  <div class="max-w-4xl mx-auto px-6 py-10 text-gray-800  gap-10 items-center ">
+    <h1 class="text-xl font-semibold text-black mb-2">
+      All-in-One Platform – From Field to Market
+    </h1>
+    <p>
+      The real strength of the K2 App lies in its ability to connect the entire farming process—from sowing seeds to
+      selling produce. It supports everything from demand generation to delivery planning, while also providing live
+      updates on mandi (market) prices. Integration with IoT devices enables farmers to receive real-time data about
+      their fields, improving decision-making and resource management. With all these features combined, K2
+      becomes more than a farm management tool—it becomes the digital backbone of the FPO’s entire business
+      model.
+    </p>
+  </div>
+  <div class="flex justify-center mb-6">
+    <img src="images/blog2_pictures/blog2_5.png" alt="FPOs and Digital Farming"
+      class="rounded shadow-md w-full max-w-lg">
+  </div>
+
+  <div class="max-w-4xl mx-auto px-6 py-10 text-gray-800  gap-10 items-center ">
+    <h1 class="text-xl font-semibold text-black mb-2">
+      Simple. Smart. Supportive.
+    </h1>
+    <p>
+      The K2 App is not just another software tool; it is a complete support system designed to help farmers and
+      FPOs succeed together. By simplifying everyday operations, enhancing transparency, and encouraging
+      collective growth, K2 makes farming more manageable and more profitable. It’s a partner that understands the
+      challenges of modern agriculture and provides the tools needed to overcome them.
+      With K2, farming isn’t just smarter—it’s stronger, together.
+    </p>
+  </div>
+
+
+
+
+<footer>
+    <section style="background-color: #eaf0e7;"
+      class="py-12 px-6 md:px-16 lg:px-20 flex flex-wrap justify-between items-start gap-x-8 gap-y-4 text-gray-800 text-sm">
+
       <!-- Brand Column -->
       <div class="max-w-sm space-y-2">
         <h1 class="text-2xl font-semibold text-black">Krishi Kutumb</h1>
@@ -134,21 +357,24 @@
           with a focus on organic and sustainable<br>
           agriculture!
         </p>
-  
+
         <!-- Social Icons -->
         <div class="flex gap-3 pt-2 text-lg text-gray-600">
-          <a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/" class="hover:text-blue-600 transition bg-white px-2.5 py-1 rounded-full">
+          <a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/"
+            class="hover:text-blue-600 transition bg-white px-2.5 py-1 rounded-full">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-pink-600 transition bg-white px-2.5 py-1 rounded-full">
+          <a href="https://www.instagram.com/k2.krishikutumb/"
+            class="hover:text-pink-600 transition bg-white px-2.5 py-1 rounded-full">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-red-500 transition bg-white px-2.5 py-1 rounded-full">
+          <a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ"
+            class="hover:text-red-500 transition bg-white px-2.5 py-1 rounded-full">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
       </div>
-  
+
       <!-- Quick Links -->
       <div class="space-y-1">
         <h2 class="font-semibold mb-1 text-black">Quick Links</h2>
@@ -159,56 +385,62 @@
           <li><a href="#" class="hover:text-green-600 transition">About us</a></li>
         </ul>
       </div>
-  
+
       <!-- Community -->
       <div class="space-y-1">
         <h2 class="font-semibold mb-1 text-black">Community</h2>
         <ul class="space-y-1">
-          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-green-600 transition">Videos</a></li>
+          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ"
+              class="hover:text-green-600 transition">Videos</a></li>
           <li><a href="#" class="hover:text-green-600 transition">Blog</a></li>
         </ul>
       </div>
-  
+
       <!-- Follow Us -->
       <div class="space-y-1">
         <h2 class="font-semibold mb-1 text-black">Follow Us</h2>
         <ul class="space-y-1">
-          <li><a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-green-600 transition">Instagram</a></li>
-          <li><a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/" class="hover:text-green-600 transition">Facebook</a></li>
-          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ" class="hover:text-green-600 transition">YouTube</a></li>
-          <li><a href="http://www.linkedin.com/in/ambao-krishi-kutumb-a701b0314" class="hover:text-green-600 transition">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/k2.krishikutumb/" class="hover:text-green-600 transition">Instagram</a>
+          </li>
+          <li><a href="https://www.facebook.com/people/KrishiKutumb/61569769137792/"
+              class="hover:text-green-600 transition">Facebook</a></li>
+          <li><a href="https://www.youtube.com/channel/UCegKq4QMnrzbD_maliEautQ"
+              class="hover:text-green-600 transition">YouTube</a></li>
+          <li><a href="http://www.linkedin.com/in/ambao-krishi-kutumb-a701b0314"
+              class="hover:text-green-600 transition">LinkedIn</a></li>
         </ul>
       </div>
-  
+
       <!-- Divider -->
       <div class="w-full h-px bg-gray-300 mt-6"></div>
-  
+
       <!-- Bottom Footer -->
-      <div class="flex flex-col md:flex-row justify-between items-center w-full text-xs font-medium gap-3 text-gray-700 pt-4">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-full text-xs font-medium gap-3 text-gray-700 pt-4">
         <p>©2025 Krishi Kutumb. All rights reserved</p>
         <div class="flex gap-4">
-          
+
           <a href="policy.html" class="hover:text-green-600 transition">Privacy & Policy</a>
-          <a href="Termsandcondition.html" class="hover:text-green-600 transition">Terms & Conditions</a> </div>
+          <a href="Termsandcondition.html" class="hover:text-green-600 transition">Terms & Conditions</a>
+        </div>
       </div>
-  
+
     </section>
   </footer>
-  
-  
-  
 
-<!-- JavaScript -->
-<script>
+
+
+  <!-- JavaScript -->
+  <script>
     // Mobile Menu Toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
     mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        const isOpen = !mobileMenu.classList.contains('hidden');
-        mobileMenuButton.querySelector('i').classList.toggle('fa-bars', !isOpen);
-        mobileMenuButton.querySelector('i').classList.toggle('fa-times', isOpen);
+      mobileMenu.classList.toggle('hidden');
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenuButton.querySelector('i').classList.toggle('fa-bars', !isOpen);
+      mobileMenuButton.querySelector('i').classList.toggle('fa-times', isOpen);
     });
 
     // Mobile Dropdown Toggles
@@ -218,28 +450,28 @@
     const resourcesDropdown = document.getElementById('resources-dropdown');
 
     servicesDropdownButton.addEventListener('click', () => {
-        servicesDropdown.classList.toggle('hidden');
-        const icon = servicesDropdownButton.querySelector('.faq-icon');
-        icon.classList.toggle('fa-chevron-down');
-        icon.classList.toggle('fa-chevron-up');
+      servicesDropdown.classList.toggle('hidden');
+      const icon = servicesDropdownButton.querySelector('.faq-icon');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
     });
 
     resourcesDropdownButton.addEventListener('click', () => {
-        resourcesDropdown.classList.toggle('hidden');
-        const icon = resourcesDropdownButton.querySelector('.faq-icon');
-        icon.classList.toggle('fa-chevron-down');
-        icon.classList.toggle('fa-chevron-up');
+      resourcesDropdown.classList.toggle('hidden');
+      const icon = resourcesDropdownButton.querySelector('.faq-icon');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
     });
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (event) => {
-        if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
-            mobileMenu.classList.add('hidden');
-            mobileMenuButton.querySelector('i').classList.add('fa-bars');
-            mobileMenuButton.querySelector('i').classList.remove('fa-times');
-        }
+      if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+        mobileMenuButton.querySelector('i').classList.add('fa-bars');
+        mobileMenuButton.querySelector('i').classList.remove('fa-times');
+      }
     });
-</script>
+  </script>
 </body>
 
 </html>
